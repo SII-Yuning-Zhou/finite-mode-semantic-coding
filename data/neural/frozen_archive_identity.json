@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "source_archive_name": "finite_mode_release_inputs.tar.gz",
+  "source_archive_signature": {
+    "bytes": 56700393,
+    "mtime_ns": 1793294083595681600
+  },
+  "source_archive_sha256": "b6de108d7597eca3435c923859a97cf10e00c42a77147cda32fb2ebee2e96328",
+  "archive_sha256_policy": "Computed once on receipt; reused while source metadata is unchanged"
+}

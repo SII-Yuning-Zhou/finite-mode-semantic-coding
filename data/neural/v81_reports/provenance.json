@@ -1,0 +1,19 @@
+{
+  "protocol": "UQ-CONDITIONAL-RANS-ESCAPE-V2",
+  "git_head": "06f7b0d247cb54b7d7b6570a43a4418a8deb71e0",
+  "git_diff_clean": false,
+  "grid": "configs/iclr_mnist/grid_s1_rate_calibration_v7.json",
+  "grid_sha256": "1C40369132878E83096601AAD0BCF5D210550EFFB81CD3CF119DFF2B4A584FD1",
+  "dependencies": {
+    "torch": "2.7.0a0+ecf3bae40a.nv25.02",
+    "torchvision": "0.22.0a0",
+    "compressai": "1.2.8"
+  },
+  "torch_cuda_runtime": "12.8",
+  "cuda_devices": [
+    "NVIDIA GeForce RTX 4090",
+    "NVIDIA GeForce RTX 4090",
+    "NVIDIA GeForce RTX 4090",
+    "NVIDIA GeForce RTX 4090"
+  ]
+}

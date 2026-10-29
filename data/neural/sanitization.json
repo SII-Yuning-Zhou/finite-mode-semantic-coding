@@ -1,0 +1,375 @@
+{
+  "status": "PASS",
+  "protocol": "UQ-CONDITIONAL-RANS-ESCAPE-V2",
+  "source_archive_sha256": "48f54806e9fb51ee5a69f29ab63e44409a4aaf1b49ca0c2c258049dbc56509b0",
+  "copied": [
+    {
+      "name": "aggregate.json",
+      "source_member_sha256": "feec7a2c4a3efac19a3c1222fa205abde54cd958a3d8aba83f063de3c932ffe2"
+    },
+    {
+      "name": "completion.json",
+      "source_member_sha256": "33bf72f66f11ecb8b3b6b2b4f932b35c9df99a7521fa01dbaa63f250c5ba6f7b"
+    },
+    {
+      "name": "provenance.json",
+      "source_member_sha256": "a212fbe8daa8ac8f21dd4c214172be8576a0fe814c3b4699ffd31848af10d54a"
+    },
+    {
+      "name": "rate_0_rep_0.config.json",
+      "source_member_sha256": "5bb7cc8fab7e653e18385279c2cc60d736f62447e2ed33a220f52363b9080650"
+    },
+    {
+      "name": "rate_0_rep_0.json",
+      "source_member_sha256": "4d24e0bd36e922759d36fdaf2f3665382d6e9e8ea3e74933fe8aded8db6fd0a8"
+    },
+    {
+      "name": "rate_0_rep_1.config.json",
+      "source_member_sha256": "5bb7cc8fab7e653e18385279c2cc60d736f62447e2ed33a220f52363b9080650"
+    },
+    {
+      "name": "rate_0_rep_1.json",
+      "source_member_sha256": "21139dd8d870f3dcf7290ea215f31c3ac67910438c032a7af95afea19233b1b2"
+    },
+    {
+      "name": "rate_0_rep_2.config.json",
+      "source_member_sha256": "5bb7cc8fab7e653e18385279c2cc60d736f62447e2ed33a220f52363b9080650"
+    },
+    {
+      "name": "rate_0_rep_2.json",
+      "source_member_sha256": "b478c159d74791f23772cefcf475e3c2213f9e67a1c0e6eea31723a57b0c1cf5"
+    },
+    {
+      "name": "rate_0_rep_3.config.json",
+      "source_member_sha256": "5bb7cc8fab7e653e18385279c2cc60d736f62447e2ed33a220f52363b9080650"
+    },
+    {
+      "name": "rate_0_rep_3.json",
+      "source_member_sha256": "314b00e84a70854b872fc77ba730cff9412ebd4b41dc3bdb78e608933efb4998"
+    },
+    {
+      "name": "rate_0_rep_4.config.json",
+      "source_member_sha256": "5bb7cc8fab7e653e18385279c2cc60d736f62447e2ed33a220f52363b9080650"
+    },
+    {
+      "name": "rate_0_rep_4.json",
+      "source_member_sha256": "c5f2ff5ba78c72a384586e4f30f1f07749f38ac4898d614216cb5c1bbda69f16"
+    },
+    {
+      "name": "rate_200_rep_0.config.json",
+      "source_member_sha256": "68b8b74c4e809b655b2cb49c0590ee036ce724b5c0806e7ff28b3e94a31f33cd"
+    },
+    {
+      "name": "rate_200_rep_0.json",
+      "source_member_sha256": "cbd93aa14a2ea578990c2f895e8faf664f389b661bb2de080307cdcbd9261bd1"
+    },
+    {
+      "name": "rate_200_rep_1.config.json",
+      "source_member_sha256": "68b8b74c4e809b655b2cb49c0590ee036ce724b5c0806e7ff28b3e94a31f33cd"
+    },
+    {
+      "name": "rate_200_rep_1.json",
+      "source_member_sha256": "b54f7b040d346f564da4c17e6cd1aa5a1f1bcb833d24193c24299f9be291fdc4"
+    },
+    {
+      "name": "rate_200_rep_2.config.json",
+      "source_member_sha256": "68b8b74c4e809b655b2cb49c0590ee036ce724b5c0806e7ff28b3e94a31f33cd"
+    },
+    {
+      "name": "rate_200_rep_2.json",
+      "source_member_sha256": "442965e385a1de5535feee412a75e676523c9b3b630e354dcb5bf0f85b382d26"
+    },
+    {
+      "name": "rate_200_rep_3.config.json",
+      "source_member_sha256": "68b8b74c4e809b655b2cb49c0590ee036ce724b5c0806e7ff28b3e94a31f33cd"
+    },
+    {
+      "name": "rate_200_rep_3.json",
+      "source_member_sha256": "c9553aa16695577a88503ca8670dc8a113d8bf217a754277d1e83a7ac9e20359"
+    },
+    {
+      "name": "rate_200_rep_4.config.json",
+      "source_member_sha256": "68b8b74c4e809b655b2cb49c0590ee036ce724b5c0806e7ff28b3e94a31f33cd"
+    },
+    {
+      "name": "rate_200_rep_4.json",
+      "source_member_sha256": "e442a4a43204292851a651a677dca76eecc35811066871409b481280298a591d"
+    },
+    {
+      "name": "rate_50000_rep_0.config.json",
+      "source_member_sha256": "5405f4c0335222e0215b33a52cda4f8746a196c01cd67481292638211d8372a9"
+    },
+    {
+      "name": "rate_50000_rep_0.json",
+      "source_member_sha256": "4c10306806de89f03d01db1d1b8205941b7ccdabaf050bfd828de943506797b1"
+    },
+    {
+      "name": "rate_50000_rep_1.config.json",
+      "source_member_sha256": "5405f4c0335222e0215b33a52cda4f8746a196c01cd67481292638211d8372a9"
+    },
+    {
+      "name": "rate_50000_rep_1.json",
+      "source_member_sha256": "e65eeb1ab837021f9e579a4097d7615759e5c7b1b256dfb06baf48d8bc556800"
+    },
+    {
+      "name": "rate_50000_rep_2.config.json",
+      "source_member_sha256": "5405f4c0335222e0215b33a52cda4f8746a196c01cd67481292638211d8372a9"
+    },
+    {
+      "name": "rate_50000_rep_2.json",
+      "source_member_sha256": "0ff764d87651d09f6caf8e173a828527f3ceb4737dcbbc8b02875f0390cac852"
+    },
+    {
+      "name": "rate_50000_rep_3.config.json",
+      "source_member_sha256": "5405f4c0335222e0215b33a52cda4f8746a196c01cd67481292638211d8372a9"
+    },
+    {
+      "name": "rate_50000_rep_3.json",
+      "source_member_sha256": "06067eea236f366edb50ae0a7d41fc27652e02a54aa85993a1f5a16798334ef0"
+    },
+    {
+      "name": "rate_50000_rep_4.config.json",
+      "source_member_sha256": "5405f4c0335222e0215b33a52cda4f8746a196c01cd67481292638211d8372a9"
+    },
+    {
+      "name": "rate_50000_rep_4.json",
+      "source_member_sha256": "1c0bf20aff3e092d4ba5bfe67ed5e2051d4cfb9b6b8152ff1f748d5ae6f3ba0c"
+    },
+    {
+      "name": "rate_5000_rep_0.config.json",
+      "source_member_sha256": "969db9609ca8d605ae6a7d3f0c20382fc537c959bf8459ebe965769ea12a74e7"
+    },
+    {
+      "name": "rate_5000_rep_0.json",
+      "source_member_sha256": "8e658cb8fd6e6d416d60df905b19350925ba032961594569692f30392b50bf96"
+    },
+    {
+      "name": "rate_5000_rep_1.config.json",
+      "source_member_sha256": "969db9609ca8d605ae6a7d3f0c20382fc537c959bf8459ebe965769ea12a74e7"
+    },
+    {
+      "name": "rate_5000_rep_1.json",
+      "source_member_sha256": "3ffe5dcb944b32ce811e2b2cd45162250f6f169bff18fc3e90763f8885f65ab8"
+    },
+    {
+      "name": "rate_5000_rep_2.config.json",
+      "source_member_sha256": "969db9609ca8d605ae6a7d3f0c20382fc537c959bf8459ebe965769ea12a74e7"
+    },
+    {
+      "name": "rate_5000_rep_2.json",
+      "source_member_sha256": "326eef1d78058c7040f6ec6b42eccc9478bc7a4e16a39fae2cef02716e5754cd"
+    },
+    {
+      "name": "rate_5000_rep_3.config.json",
+      "source_member_sha256": "969db9609ca8d605ae6a7d3f0c20382fc537c959bf8459ebe965769ea12a74e7"
+    },
+    {
+      "name": "rate_5000_rep_3.json",
+      "source_member_sha256": "b0079661aee5624b3790a2eaddb5526846b9d08c38b58a8aaf246a4e16c58567"
+    },
+    {
+      "name": "rate_5000_rep_4.config.json",
+      "source_member_sha256": "969db9609ca8d605ae6a7d3f0c20382fc537c959bf8459ebe965769ea12a74e7"
+    },
+    {
+      "name": "rate_5000_rep_4.json",
+      "source_member_sha256": "a11301a62006b1484077362ca93c0bd87b1e3ce07bcf01dcd8096fc7f8b71c41"
+    },
+    {
+      "name": "status.json",
+      "source_member_sha256": "81b359f45c4cc2632c66f5dc2c8f7551dee63c8891df39b76ef4806f4e4f2cd2"
+    }
+  ],
+  "excluded_entries": [
+    "aggregate.log",
+    "rate_0_rep_0.log",
+    "rate_0_rep_1.log",
+    "rate_0_rep_2.log",
+    "rate_0_rep_3.log",
+    "rate_0_rep_4.log",
+    "rate_200_rep_0.log",
+    "rate_200_rep_1.log",
+    "rate_200_rep_2.log",
+    "rate_200_rep_3.log",
+    "rate_200_rep_4.log",
+    "rate_50000_rep_0.log",
+    "rate_50000_rep_1.log",
+    "rate_50000_rep_2.log",
+    "rate_50000_rep_3.log",
+    "rate_50000_rep_4.log",
+    "rate_5000_rep_0.log",
+    "rate_5000_rep_1.log",
+    "rate_5000_rep_2.log",
+    "rate_5000_rep_3.log",
+    "rate_5000_rep_4.log",
+    "unit_tests.log"
+  ],
+  "sanitized_fields": [
+    {
+      "field": "aggregate.json.inputs[0]",
+      "action": "absolute local path replaced; value not retained in public log"
+    },
+    {
+      "field": "aggregate.json.inputs[1]",
+      "action": "absolute local path replaced; value not retained in public log"
+    },
+    {
+      "field": "aggregate.json.inputs[2]",
+      "action": "absolute local path replaced; value not retained in public log"
+    },
+    {
+      "field": "aggregate.json.inputs[3]",
+      "action": "absolute local path replaced; value not retained in public log"
+    },
+    {
+      "field": "aggregate.json.inputs[4]",
+      "action": "absolute local path replaced; value not retained in public log"
+    },
+    {
+      "field": "aggregate.json.inputs[5]",
+      "action": "absolute local path replaced; value not retained in public log"
+    },
+    {
+      "field": "aggregate.json.inputs[6]",
+      "action": "absolute local path replaced; value not retained in public log"
+    },
+    {
+      "field": "aggregate.json.inputs[7]",
+      "action": "absolute local path replaced; value not retained in public log"
+    },
+    {
+      "field": "aggregate.json.inputs[8]",
+      "action": "absolute local path replaced; value not retained in public log"
+    },
+    {
+      "field": "aggregate.json.inputs[9]",
+      "action": "absolute local path replaced; value not retained in public log"
+    },
+    {
+      "field": "aggregate.json.inputs[10]",
+      "action": "absolute local path replaced; value not retained in public log"
+    },
+    {
+      "field": "aggregate.json.inputs[11]",
+      "action": "absolute local path replaced; value not retained in public log"
+    },
+    {
+      "field": "aggregate.json.inputs[12]",
+      "action": "absolute local path replaced; value not retained in public log"
+    },
+    {
+      "field": "aggregate.json.inputs[13]",
+      "action": "absolute local path replaced; value not retained in public log"
+    },
+    {
+      "field": "aggregate.json.inputs[14]",
+      "action": "absolute local path replaced; value not retained in public log"
+    },
+    {
+      "field": "aggregate.json.inputs[15]",
+      "action": "absolute local path replaced; value not retained in public log"
+    },
+    {
+      "field": "aggregate.json.inputs[16]",
+      "action": "absolute local path replaced; value not retained in public log"
+    },
+    {
+      "field": "aggregate.json.inputs[17]",
+      "action": "absolute local path replaced; value not retained in public log"
+    },
+    {
+      "field": "aggregate.json.inputs[18]",
+      "action": "absolute local path replaced; value not retained in public log"
+    },
+    {
+      "field": "aggregate.json.inputs[19]",
+      "action": "absolute local path replaced; value not retained in public log"
+    },
+    {
+      "field": "provenance.json.grid",
+      "action": "absolute local path replaced; value not retained in public log"
+    },
+    {
+      "field": "rate_0_rep_0.json.grid",
+      "action": "absolute local path replaced; value not retained in public log"
+    },
+    {
+      "field": "rate_0_rep_1.json.grid",
+      "action": "absolute local path replaced; value not retained in public log"
+    },
+    {
+      "field": "rate_0_rep_2.json.grid",
+      "action": "absolute local path replaced; value not retained in public log"
+    },
+    {
+      "field": "rate_0_rep_3.json.grid",
+      "action": "absolute local path replaced; value not retained in public log"
+    },
+    {
+      "field": "rate_0_rep_4.json.grid",
+      "action": "absolute local path replaced; value not retained in public log"
+    },
+    {
+      "field": "rate_200_rep_0.json.grid",
+      "action": "absolute local path replaced; value not retained in public log"
+    },
+    {
+      "field": "rate_200_rep_1.json.grid",
+      "action": "absolute local path replaced; value not retained in public log"
+    },
+    {
+      "field": "rate_200_rep_2.json.grid",
+      "action": "absolute local path replaced; value not retained in public log"
+    },
+    {
+      "field": "rate_200_rep_3.json.grid",
+      "action": "absolute local path replaced; value not retained in public log"
+    },
+    {
+      "field": "rate_200_rep_4.json.grid",
+      "action": "absolute local path replaced; value not retained in public log"
+    },
+    {
+      "field": "rate_50000_rep_0.json.grid",
+      "action": "absolute local path replaced; value not retained in public log"
+    },
+    {
+      "field": "rate_50000_rep_1.json.grid",
+      "action": "absolute local path replaced; value not retained in public log"
+    },
+    {
+      "field": "rate_50000_rep_2.json.grid",
+      "action": "absolute local path replaced; value not retained in public log"
+    },
+    {
+      "field": "rate_50000_rep_3.json.grid",
+      "action": "absolute local path replaced; value not retained in public log"
+    },
+    {
+      "field": "rate_50000_rep_4.json.grid",
+      "action": "absolute local path replaced; value not retained in public log"
+    },
+    {
+      "field": "rate_5000_rep_0.json.grid",
+      "action": "absolute local path replaced; value not retained in public log"
+    },
+    {
+      "field": "rate_5000_rep_1.json.grid",
+      "action": "absolute local path replaced; value not retained in public log"
+    },
+    {
+      "field": "rate_5000_rep_2.json.grid",
+      "action": "absolute local path replaced; value not retained in public log"
+    },
+    {
+      "field": "rate_5000_rep_3.json.grid",
+      "action": "absolute local path replaced; value not retained in public log"
+    },
+    {
+      "field": "rate_5000_rep_4.json.grid",
+      "action": "absolute local path replaced; value not retained in public log"
+    }
+  ],
+  "preservation": "All numerical fields, schedule seeds, original git status and scientific fingerprints unchanged",
+  "fingerprint_note": "Source fingerprints refer to original server artifacts; path-sanitized copies are not byte-identical originals"
+}

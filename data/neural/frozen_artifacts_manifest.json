@@ -1,0 +1,414 @@
+{
+  "schema_version": 1,
+  "status": "PASS",
+  "source_archive_name": "finite_mode_release_inputs.tar.gz",
+  "source_archive_sha256": "b6de108d7597eca3435c923859a97cf10e00c42a77147cda32fb2ebee2e96328",
+  "source_archive_signature": {
+    "bytes": 56700393,
+    "mtime_ns": 1793294083595681600
+  },
+  "members": 26,
+  "source_uncompressed_bytes": 62551812,
+  "checkpoint_count": 5,
+  "text_record_count": 21,
+  "entries": [
+    {
+      "path": "results/iclr_mnist/s1_rate_calibration_v7/s1_rate_calibration_v7_s20260811_lr0_continuous/final.pt",
+      "kind": "frozen_checkpoint",
+      "source_bytes": 12560059,
+      "source_sha256": "90e8e0915703ba1c46753b4b7a80d92253ee76d7d3516a37ea72f23ed8d24b06",
+      "public_bytes": 12560059,
+      "public_sha256": "90e8e0915703ba1c46753b4b7a80d92253ee76d7d3516a37ea72f23ed8d24b06",
+      "sanitized": false,
+      "redactions": [],
+      "numeric_values_preserved": true
+    },
+    {
+      "path": "results/iclr_mnist/s1_rate_calibration_v7/s1_rate_calibration_v7_s20260811_lr200_continuous/final.pt",
+      "kind": "frozen_checkpoint",
+      "source_bytes": 12560059,
+      "source_sha256": "848ddecad8e011a53c917a434b7c115265449ef22fbed1c99bd5c82dfebc379c",
+      "public_bytes": 12560059,
+      "public_sha256": "848ddecad8e011a53c917a434b7c115265449ef22fbed1c99bd5c82dfebc379c",
+      "sanitized": false,
+      "redactions": [],
+      "numeric_values_preserved": true
+    },
+    {
+      "path": "results/iclr_mnist/s1_rate_calibration_v7/s1_rate_calibration_v7_s20260811_lr5000_continuous/final.pt",
+      "kind": "frozen_checkpoint",
+      "source_bytes": 12560059,
+      "source_sha256": "0ea46a452d8638a84cd7b1b9473111ed030078545215bb6c0e94f067ad3d7c5b",
+      "public_bytes": 12560059,
+      "public_sha256": "0ea46a452d8638a84cd7b1b9473111ed030078545215bb6c0e94f067ad3d7c5b",
+      "sanitized": false,
+      "redactions": [],
+      "numeric_values_preserved": true
+    },
+    {
+      "path": "results/iclr_mnist/s1_rate_calibration_v7/s1_rate_calibration_v7_s20260811_lr50000_continuous/final.pt",
+      "kind": "frozen_checkpoint",
+      "source_bytes": 12560059,
+      "source_sha256": "d80110f0215cd6ba525785b98118f2757ab03383ec691f8804a206cdb79a7d0f",
+      "public_bytes": 12560059,
+      "public_sha256": "d80110f0215cd6ba525785b98118f2757ab03383ec691f8804a206cdb79a7d0f",
+      "sanitized": false,
+      "redactions": [],
+      "numeric_values_preserved": true
+    },
+    {
+      "path": "results/iclr_mnist/classifiers/iclr_gray_resnet18_small_v2.pt",
+      "kind": "frozen_checkpoint",
+      "source_bytes": 11252112,
+      "source_sha256": "c4b7a7019ce9e50baa702849ed39ca0d838b0fc8aa73961612d728168c3150d9",
+      "public_bytes": 11252112,
+      "public_sha256": "c4b7a7019ce9e50baa702849ed39ca0d838b0fc8aa73961612d728168c3150d9",
+      "sanitized": false,
+      "redactions": [],
+      "numeric_values_preserved": true
+    },
+    {
+      "path": "results/iclr_mnist/server_controller_edge_metrics_v1/edge_profile_rate_0_seed_20260811_cpu.json",
+      "kind": "profile",
+      "source_bytes": 116902,
+      "source_sha256": "f51579017a1b4504d821440f00919f041adf339397e798f20c147bbfab9abad4",
+      "public_bytes": 116658,
+      "public_sha256": "71d00b4440e499661211deec9a681ace5008c7777e78267e51358c763f0811e7",
+      "sanitized": true,
+      "redactions": [
+        {
+          "field": "$.config_copy",
+          "action": "unrelated local path/internal address replaced"
+        },
+        {
+          "field": "$.checkpoint",
+          "action": "unrelated local path/internal address replaced"
+        }
+      ],
+      "numeric_values_preserved": true
+    },
+    {
+      "path": "results/iclr_mnist/server_controller_edge_metrics_v1/edge_profile_rate_0_seed_20260811_cuda.json",
+      "kind": "profile",
+      "source_bytes": 123534,
+      "source_sha256": "1d16482013379e5a5bcb81880df3dd2d08fa4a9bae6587815fa58a514d6d96b6",
+      "public_bytes": 123290,
+      "public_sha256": "d28a7fa686aca77e73251252d837a0d93559612e21d62fa7fdd5c72a23766930",
+      "sanitized": true,
+      "redactions": [
+        {
+          "field": "$.config_copy",
+          "action": "unrelated local path/internal address replaced"
+        },
+        {
+          "field": "$.checkpoint",
+          "action": "unrelated local path/internal address replaced"
+        }
+      ],
+      "numeric_values_preserved": true
+    },
+    {
+      "path": "results/iclr_mnist/server_controller_edge_metrics_v1/edge_profile_rate_200_seed_20260811_cpu.json",
+      "kind": "profile",
+      "source_bytes": 115895,
+      "source_sha256": "18e0046ef3bda48ac7b8932c1fb5b46a009ae1c6bebea47ee63b5cc0ebf5ef4e",
+      "public_bytes": 115651,
+      "public_sha256": "d6de47d59ecca28c15e17437bedf0926c55431925669a20a586bd832a4d83ee3",
+      "sanitized": true,
+      "redactions": [
+        {
+          "field": "$.config_copy",
+          "action": "unrelated local path/internal address replaced"
+        },
+        {
+          "field": "$.checkpoint",
+          "action": "unrelated local path/internal address replaced"
+        }
+      ],
+      "numeric_values_preserved": true
+    },
+    {
+      "path": "results/iclr_mnist/server_controller_edge_metrics_v1/edge_profile_rate_200_seed_20260811_cuda.json",
+      "kind": "profile",
+      "source_bytes": 122533,
+      "source_sha256": "06641a4e5c7cad1f736e246213b44f946a9969b72721c51e5c9c7826edd6ef24",
+      "public_bytes": 122289,
+      "public_sha256": "b80caa65e94338ffaff494c46eedf198312e272c4ee54072f5b705c1e506dcfa",
+      "sanitized": true,
+      "redactions": [
+        {
+          "field": "$.config_copy",
+          "action": "unrelated local path/internal address replaced"
+        },
+        {
+          "field": "$.checkpoint",
+          "action": "unrelated local path/internal address replaced"
+        }
+      ],
+      "numeric_values_preserved": true
+    },
+    {
+      "path": "results/iclr_mnist/server_controller_edge_metrics_v1/edge_profile_rate_5000_seed_20260811_cpu.json",
+      "kind": "profile",
+      "source_bytes": 115928,
+      "source_sha256": "58e608b17cac67ae5d3ee6f50dba6ad27bbc94ba3bdc771e56bf47b421b5329b",
+      "public_bytes": 115684,
+      "public_sha256": "a677691430a41daec972c591eda32b7ebd22cc898babd25dde0a0026c37bd349",
+      "sanitized": true,
+      "redactions": [
+        {
+          "field": "$.config_copy",
+          "action": "unrelated local path/internal address replaced"
+        },
+        {
+          "field": "$.checkpoint",
+          "action": "unrelated local path/internal address replaced"
+        }
+      ],
+      "numeric_values_preserved": true
+    },
+    {
+      "path": "results/iclr_mnist/server_controller_edge_metrics_v1/edge_profile_rate_5000_seed_20260811_cuda.json",
+      "kind": "profile",
+      "source_bytes": 122536,
+      "source_sha256": "85bf9e24aaffa17a6bdafd1b03b7c55479c497c448b9b74e00803876669f936c",
+      "public_bytes": 122292,
+      "public_sha256": "4b76c64d81760b35f62794ac3750a66b694b7024e4935bdb3cfe7ee25bb479b7",
+      "sanitized": true,
+      "redactions": [
+        {
+          "field": "$.config_copy",
+          "action": "unrelated local path/internal address replaced"
+        },
+        {
+          "field": "$.checkpoint",
+          "action": "unrelated local path/internal address replaced"
+        }
+      ],
+      "numeric_values_preserved": true
+    },
+    {
+      "path": "results/iclr_mnist/server_controller_edge_metrics_v1/edge_profile_rate_50000_seed_20260811_cpu.json",
+      "kind": "profile",
+      "source_bytes": 115864,
+      "source_sha256": "cdf1e7bcb2feaee00167b5a0ba83b0055cc46f86d69c1065f17e5c333d4a8c19",
+      "public_bytes": 115620,
+      "public_sha256": "9bd095bb827843eb1f4aba219eb13f19424bd0d0359c51d4453c8f5178e7949b",
+      "sanitized": true,
+      "redactions": [
+        {
+          "field": "$.config_copy",
+          "action": "unrelated local path/internal address replaced"
+        },
+        {
+          "field": "$.checkpoint",
+          "action": "unrelated local path/internal address replaced"
+        }
+      ],
+      "numeric_values_preserved": true
+    },
+    {
+      "path": "results/iclr_mnist/server_controller_edge_metrics_v1/edge_profile_rate_50000_seed_20260811_cuda.json",
+      "kind": "profile",
+      "source_bytes": 122556,
+      "source_sha256": "e0cb4b9915ebe7eff7d6819e44bfd67b4be42db114f3a0330debb34a97960b2b",
+      "public_bytes": 122312,
+      "public_sha256": "20f750530046d63ff6106933942115fc97a4448370fe7afb0dda6d7e00424e0f",
+      "sanitized": true,
+      "redactions": [
+        {
+          "field": "$.config_copy",
+          "action": "unrelated local path/internal address replaced"
+        },
+        {
+          "field": "$.checkpoint",
+          "action": "unrelated local path/internal address replaced"
+        }
+      ],
+      "numeric_values_preserved": true
+    },
+    {
+      "path": "results/iclr_mnist/classifiers/iclr_gray_resnet18_small_v2.json",
+      "kind": "metadata_json",
+      "source_bytes": 2017,
+      "source_sha256": "b9d33a7a2106ee5ab4862e9e52e56328e1fece304e5a352ecdcbd0e4433ca277",
+      "public_bytes": 1895,
+      "public_sha256": "6fda99c8b4619a4cdfcc990d57bc479e80c8efd729bb589361301297273fc24a",
+      "sanitized": true,
+      "redactions": [
+        {
+          "field": "$.output",
+          "action": "unrelated local path/internal address replaced"
+        }
+      ],
+      "numeric_values_preserved": true
+    },
+    {
+      "path": "results/iclr_mnist/server_controller_literature_v7/calibration_pass.json",
+      "kind": "metadata_json",
+      "source_bytes": 279,
+      "source_sha256": "a208b27c8ec4ef06f29d4e0f13e1393ef0b14b581514794943bfd9409f83b035",
+      "public_bytes": 279,
+      "public_sha256": "a208b27c8ec4ef06f29d4e0f13e1393ef0b14b581514794943bfd9409f83b035",
+      "sanitized": false,
+      "redactions": [],
+      "numeric_values_preserved": true
+    },
+    {
+      "path": "results/iclr_mnist/server_controller_edge_metrics_v1/edge_deployment_metrics.csv",
+      "kind": "ledger_text",
+      "source_bytes": 12193,
+      "source_sha256": "59044251a6bb2972d171d19e9d057725261a0b9d5940fed0a2d8cecea4a19843",
+      "public_bytes": 12193,
+      "public_sha256": "59044251a6bb2972d171d19e9d057725261a0b9d5940fed0a2d8cecea4a19843",
+      "sanitized": false,
+      "redactions": [],
+      "numeric_values_preserved": true
+    },
+    {
+      "path": "results/iclr_mnist/server_controller_edge_metrics_v1/edge_deployment_metrics.json",
+      "kind": "metadata_json",
+      "source_bytes": 72178,
+      "source_sha256": "f2e63b72324432b4f093acbc80655894a4df31c1ed956bf4bf30a07f4bee409e",
+      "public_bytes": 71202,
+      "public_sha256": "c2d2e181f5479213c67410d5a275c8c22e5231f2376e2f882552367717576d87",
+      "sanitized": true,
+      "redactions": [
+        {
+          "field": "$.reports[0].path",
+          "action": "unrelated local path/internal address replaced"
+        },
+        {
+          "field": "$.reports[1].path",
+          "action": "unrelated local path/internal address replaced"
+        },
+        {
+          "field": "$.reports[2].path",
+          "action": "unrelated local path/internal address replaced"
+        },
+        {
+          "field": "$.reports[3].path",
+          "action": "unrelated local path/internal address replaced"
+        },
+        {
+          "field": "$.reports[4].path",
+          "action": "unrelated local path/internal address replaced"
+        },
+        {
+          "field": "$.reports[5].path",
+          "action": "unrelated local path/internal address replaced"
+        },
+        {
+          "field": "$.reports[6].path",
+          "action": "unrelated local path/internal address replaced"
+        },
+        {
+          "field": "$.reports[7].path",
+          "action": "unrelated local path/internal address replaced"
+        }
+      ],
+      "numeric_values_preserved": true
+    },
+    {
+      "path": "results/iclr_mnist/server_controller_edge_metrics_v1/edge_deployment_metrics.md",
+      "kind": "ledger_text",
+      "source_bytes": 2075,
+      "source_sha256": "74290c2fdeee03b6533ba7930f113a796bf05532bc87687ce066f7ab0ed5c842",
+      "public_bytes": 2075,
+      "public_sha256": "74290c2fdeee03b6533ba7930f113a796bf05532bc87687ce066f7ab0ed5c842",
+      "sanitized": false,
+      "redactions": [],
+      "numeric_values_preserved": true
+    },
+    {
+      "path": "results/iclr_mnist/server_controller_edge_metrics_v1/edge_profile_rate_0_seed_20260811_cpu.config.json",
+      "kind": "metadata_json",
+      "source_bytes": 1865,
+      "source_sha256": "5bb7cc8fab7e653e18385279c2cc60d736f62447e2ed33a220f52363b9080650",
+      "public_bytes": 1865,
+      "public_sha256": "5bb7cc8fab7e653e18385279c2cc60d736f62447e2ed33a220f52363b9080650",
+      "sanitized": false,
+      "redactions": [],
+      "numeric_values_preserved": true
+    },
+    {
+      "path": "results/iclr_mnist/server_controller_edge_metrics_v1/edge_profile_rate_0_seed_20260811_cuda.config.json",
+      "kind": "metadata_json",
+      "source_bytes": 1865,
+      "source_sha256": "5bb7cc8fab7e653e18385279c2cc60d736f62447e2ed33a220f52363b9080650",
+      "public_bytes": 1865,
+      "public_sha256": "5bb7cc8fab7e653e18385279c2cc60d736f62447e2ed33a220f52363b9080650",
+      "sanitized": false,
+      "redactions": [],
+      "numeric_values_preserved": true
+    },
+    {
+      "path": "results/iclr_mnist/server_controller_edge_metrics_v1/edge_profile_rate_200_seed_20260811_cpu.config.json",
+      "kind": "metadata_json",
+      "source_bytes": 1871,
+      "source_sha256": "68b8b74c4e809b655b2cb49c0590ee036ce724b5c0806e7ff28b3e94a31f33cd",
+      "public_bytes": 1871,
+      "public_sha256": "68b8b74c4e809b655b2cb49c0590ee036ce724b5c0806e7ff28b3e94a31f33cd",
+      "sanitized": false,
+      "redactions": [],
+      "numeric_values_preserved": true
+    },
+    {
+      "path": "results/iclr_mnist/server_controller_edge_metrics_v1/edge_profile_rate_200_seed_20260811_cuda.config.json",
+      "kind": "metadata_json",
+      "source_bytes": 1871,
+      "source_sha256": "68b8b74c4e809b655b2cb49c0590ee036ce724b5c0806e7ff28b3e94a31f33cd",
+      "public_bytes": 1871,
+      "public_sha256": "68b8b74c4e809b655b2cb49c0590ee036ce724b5c0806e7ff28b3e94a31f33cd",
+      "sanitized": false,
+      "redactions": [],
+      "numeric_values_preserved": true
+    },
+    {
+      "path": "results/iclr_mnist/server_controller_edge_metrics_v1/edge_profile_rate_50000_seed_20260811_cpu.config.json",
+      "kind": "metadata_json",
+      "source_bytes": 1877,
+      "source_sha256": "5405f4c0335222e0215b33a52cda4f8746a196c01cd67481292638211d8372a9",
+      "public_bytes": 1877,
+      "public_sha256": "5405f4c0335222e0215b33a52cda4f8746a196c01cd67481292638211d8372a9",
+      "sanitized": false,
+      "redactions": [],
+      "numeric_values_preserved": true
+    },
+    {
+      "path": "results/iclr_mnist/server_controller_edge_metrics_v1/edge_profile_rate_50000_seed_20260811_cuda.config.json",
+      "kind": "metadata_json",
+      "source_bytes": 1877,
+      "source_sha256": "5405f4c0335222e0215b33a52cda4f8746a196c01cd67481292638211d8372a9",
+      "public_bytes": 1877,
+      "public_sha256": "5405f4c0335222e0215b33a52cda4f8746a196c01cd67481292638211d8372a9",
+      "sanitized": false,
+      "redactions": [],
+      "numeric_values_preserved": true
+    },
+    {
+      "path": "results/iclr_mnist/server_controller_edge_metrics_v1/edge_profile_rate_5000_seed_20260811_cpu.config.json",
+      "kind": "metadata_json",
+      "source_bytes": 1874,
+      "source_sha256": "969db9609ca8d605ae6a7d3f0c20382fc537c959bf8459ebe965769ea12a74e7",
+      "public_bytes": 1874,
+      "public_sha256": "969db9609ca8d605ae6a7d3f0c20382fc537c959bf8459ebe965769ea12a74e7",
+      "sanitized": false,
+      "redactions": [],
+      "numeric_values_preserved": true
+    },
+    {
+      "path": "results/iclr_mnist/server_controller_edge_metrics_v1/edge_profile_rate_5000_seed_20260811_cuda.config.json",
+      "kind": "metadata_json",
+      "source_bytes": 1874,
+      "source_sha256": "969db9609ca8d605ae6a7d3f0c20382fc537c959bf8459ebe965769ea12a74e7",
+      "public_bytes": 1874,
+      "public_sha256": "969db9609ca8d605ae6a7d3f0c20382fc537c959bf8459ebe965769ea12a74e7",
+      "sanitized": false,
+      "redactions": [],
+      "numeric_values_preserved": true
+    }
+  ],
+  "checkpoint_handling": "Original bytes retained; no unpickling performed by importer",
+  "fingerprint_note": "Original experiment fingerprints describe original files; public sanitized file digests are recorded separately"
+}

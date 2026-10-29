@@ -1,0 +1,2 @@
+# Optional symbolic and full model-O branch audits; not needed by theory.verify.
+sympy>=1.12,<2

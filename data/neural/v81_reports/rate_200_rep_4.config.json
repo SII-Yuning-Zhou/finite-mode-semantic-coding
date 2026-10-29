@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "run_name": "s1_rate_calibration_v7_s20260811_lr200_continuous",
+  "seed": 20260811,
+  "stage": "s1_continuous",
+  "output_dir": "results/iclr_mnist/s1_rate_calibration_v7/s1_rate_calibration_v7_s20260811_lr200_continuous",
+  "data": {
+    "root": "data_external/mnist",
+    "validation_size": 5000,
+    "split_seed": 20260801,
+    "download": true,
+    "test_policy": "validation"
+  },
+  "model": {
+    "base_channels": 48,
+    "latent_channels": 12,
+    "classifier_width": 32,
+    "decoder_output_activation": "identity",
+    "gdn_implementation": "compressai",
+    "decoder_output_postprocess": "clamp_0_1"
+  },
+  "dither": {
+    "kind": "continuous",
+    "counts": [
+      1
+    ],
+    "codebook_seed": 1729,
+    "schedule_seed": 2718
+  },
+  "train": {
+    "steps": 3000,
+    "batch_size": 512,
+    "num_workers": 8,
+    "learning_rate": 0.005,
+    "entropy_learning_rate": 0.0001,
+    "entropy_aux_learning_rate": 0.001,
+    "discriminator_learning_rate": 0.0001,
+    "classifier_learning_rate": 0.05,
+    "classifier_pretrain_epochs": 10,
+    "classifier_warmup_epochs": 2,
+    "classifier_checkpoint": "results/iclr_mnist/classifiers/iclr_gray_resnet18_small_v2.pt",
+    "rate_weight": 200,
+    "rate_weight_scale": 1.5378700499807768e-05,
+    "distortion_reduction": "pixel_mean",
+    "adversarial_weight": 0.02,
+    "classification_weight": 0.01,
+    "gradient_penalty": 10.0,
+    "critic_steps": 5,
+    "gradient_clip": 2.0,
+    "mixed_precision": false,
+    "mixed_precision_dtype": "bfloat16",
+    "allow_tf32": false,
+    "checkpoint_every": 250
+  },
+  "evaluation": {
+    "calibration_samples": 10000,
+    "maximum_samples": null,
+    "symbol_minimum": -64,
+    "symbol_maximum": 64,
+    "distribution_samples": 2000,
+    "sliced_wasserstein_projections": 128,
+    "receiver_epochs": 20,
+    "receiver_learning_rate": 0.01
+  }
+}

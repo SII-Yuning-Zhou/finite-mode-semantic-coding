@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "status": "PASS_WITH_PROVENANCE_WARNING",
+  "archive_sha256": "48f54806e9fb51ee5a69f29ab63e44409a4aaf1b49ca0c2c258049dbc56509b0",
+  "git_head": "06f7b0d247cb54b7d7b6570a43a4418a8deb71e0",
+  "git_diff_clean": false,
+  "reports": 20,
+  "level_audits": 100,
+  "l_gt_1_raw_points": 80,
+  "negative_l_gt_1_raw_points": 0,
+  "minimum_l_gt_1_raw_gain_bpp": 4.0816326530612245e-05,
+  "minimum_checkpoint_level_mean_gain_bpp": 5.7142857142857135e-05,
+  "median_l31_checkpoint_mean_gain_bpp": 0.007311020408163265,
+  "actual_vs_quantized_gain_pearson_r": 0.9999930104851101,
+  "actual_vs_quantized_gain_mae_bpp": 1.0526648364864324e-05,
+  "maximum_tail_mass": 7.946367077238392e-06,
+  "maximum_normalization_residual": 2.384185791015625e-07,
+  "unit_tests": "NOT_RUN_BY_THIS_ANALYSIS_COMMAND",
+  "claim_scope": "operational conditional-entropy bridge on four frozen MNIST codecs",
+  "scope_exclusions": [
+    "not a proof of the information-theoretic theorem",
+    "does not manipulate the finite whole-codec mode budget K",
+    "does not identify a general K-Rc boundary",
+    "does not equate a stored PRNG seed with iid schedule entropy H(U)"
+  ]
+}

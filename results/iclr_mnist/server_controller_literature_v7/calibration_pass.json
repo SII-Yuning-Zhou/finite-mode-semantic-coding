@@ -1,0 +1,9 @@
+{
+  "status": "CALIBRATION_PASS",
+  "protocol_label": "literature-v7",
+  "completed_unix": 1786516923.603275,
+  "architecture_gate_seeds": 4,
+  "rate_calibration_points": 4,
+  "formal_s1_started": false,
+  "stop_rule": "Architecture and rate Gates pass, then stop for review."
+}

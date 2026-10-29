@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "version": "1.0.0",
+  "date": "2026-10-30",
+  "scope": "Local promotion of validated RC2; external publication is verified separately",
+  "parent_candidate": "1.0.0-rc2",
+  "parent_candidate_archive_sha256": "5f931b39741696c80737c529a680744c09541bb0f1a1bd7feac7e06a998aee8f",
+  "byte_identical_inherited_files": 192,
+  "changed_candidate_files": [
+    ".zenodo.json",
+    "CHANGELOG.md",
+    "CITATION.cff",
+    "docs/neural_inventory.json",
+    "docs/NEURAL_REPRODUCTION.md",
+    "docs/PUBLISHING_CHECKLIST_ZH.md",
+    "LICENSE-DATA.md",
+    "README.md",
+    "SOURCE_PROVENANCE.json",
+    "START_HERE_ZH.md",
+    "VERSION"
+  ],
+  "code_weights_observations_and_publication_figures_unchanged": true,
+  "scientific_tests_reused_from_validated_candidate": true,
+  "publication_changes": "Version, public links, DOI instructions and distribution metadata only",
+  "doi": null
+}

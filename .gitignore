@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+outputs/
+checkpoints/
+neural/checkpoints/
+data_external/
+*.log
+*.part
+.env
+.env.*
+!.env.example

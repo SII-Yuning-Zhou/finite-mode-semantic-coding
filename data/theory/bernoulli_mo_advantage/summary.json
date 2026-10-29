@@ -1,0 +1,63 @@
+{
+  "protocol": "SYNTHETIC-MO-ADVANTAGE-V1",
+  "git_commit": "64096ff348cfd63324a95e89f43fedce72bfc6d1",
+  "parameters": {
+    "qx": 0.18,
+    "qy": 0.1,
+    "crossover": 0.235,
+    "rate": 0.11,
+    "task": 0.9,
+    "rc_grid": [
+      0.0,
+      2.0,
+      0.025
+    ],
+    "ab_steps": 120
+  },
+  "ab_region": {
+    "points": 3514,
+    "max_delta_h": 0.033627554380578406,
+    "strict_points": 3393,
+    "min_delta_h": 1.1102230246251565e-16
+  },
+  "rc_sweep": {
+    "points_k4": 59,
+    "strict_delta_d_rc": [
+      0.55,
+      0.9
+    ],
+    "strict_delta_h_rc": [
+      0.55,
+      2.0
+    ],
+    "max_delta_h": 0.015328171596105777,
+    "max_delta_d": 0.02158224324119945
+  },
+  "witness": {
+    "K3": {
+      "candidate": "F234",
+      "weights": [
+        0.0,
+        0.020000000000000167,
+        0.976,
+        0.003999999999999847
+      ],
+      "distortion": 0.12120000000000004,
+      "delta_h": 0.0036962485367729725,
+      "delta_h_exact_fraction": 0.0036962485367729725
+    },
+    "K4": {
+      "candidate": "K4-a-left",
+      "weights": [
+        0.01105305329375613,
+        0.008946946706244036,
+        0.9671575573649951,
+        0.012842442635004753
+      ],
+      "distortion": 0.11722090081424782,
+      "delta_h": 0.004216455866593916,
+      "delta_h_exact_fraction": 0.004216455866593916
+    },
+    "delta_d_k3_minus_k4": 0.003979099185752219
+  }
+}

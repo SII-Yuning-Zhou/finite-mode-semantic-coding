@@ -1,0 +1,79 @@
+{
+  "status": "PASS",
+  "output": "results/iclr_mnist/classifiers/iclr_gray_resnet18_small_v2.pt",
+  "seed": 20260801,
+  "history": [
+    {
+      "epoch": 1,
+      "loss": 0.2773925195334949,
+      "accuracy": 0.9130037967289719,
+      "samples": 54784
+    },
+    {
+      "epoch": 2,
+      "loss": 0.041749307119818495,
+      "accuracy": 0.9869122371495327,
+      "samples": 54784
+    },
+    {
+      "epoch": 3,
+      "loss": 0.021846138806926593,
+      "accuracy": 0.9931366822429907,
+      "samples": 54784
+    },
+    {
+      "epoch": 4,
+      "loss": 0.011644817229412565,
+      "accuracy": 0.9966778621495327,
+      "samples": 54784
+    },
+    {
+      "epoch": 5,
+      "loss": 0.007012977760946639,
+      "accuracy": 0.9981929030373832,
+      "samples": 54784
+    },
+    {
+      "epoch": 6,
+      "loss": 0.0024789601360952532,
+      "accuracy": 0.9996166764018691,
+      "samples": 54784
+    },
+    {
+      "epoch": 7,
+      "loss": 0.0010842398738175212,
+      "accuracy": 0.9999087324766355,
+      "samples": 54784
+    },
+    {
+      "epoch": 8,
+      "loss": 0.0007114800837796147,
+      "accuracy": 0.9999817464953271,
+      "samples": 54784
+    },
+    {
+      "epoch": 9,
+      "loss": 0.0006069585525378515,
+      "accuracy": 1.0,
+      "samples": 54784
+    },
+    {
+      "epoch": 10,
+      "loss": 0.0005862345556167137,
+      "accuracy": 1.0,
+      "samples": 54784
+    }
+  ],
+  "diagnostics": {
+    "validation_samples": 5000,
+    "clean_accuracy": 0.9956,
+    "degraded_7x7_accuracy": 0.2252
+  },
+  "classifier_gate": {
+    "clean_accuracy_minimum": 0.98,
+    "degraded_7x7_accuracy_role": "reported_input_baseline_only_not_gated",
+    "reason": "The frozen task head is a clean target-domain evaluator; requiring degraded-input invariance would transfer restoration work from the codec to the evaluator."
+  },
+  "parameters": 2797034,
+  "torch": "2.7.0a0+ecf3bae40a.nv25.02"
+}

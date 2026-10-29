@@ -1,0 +1,8 @@
+# Install a mutually compatible torch/torchvision build for your platform FIRST.
+# The recorded experiment used the NVIDIA PyTorch 25.02 image:
+# torch 2.7.0a0+ecf3bae40a.nv25.02; torchvision 0.22.0a0; CUDA 12.8.
+# Those image builds are documented, not silently replaced by a claimed exact pip environment.
+numpy>=1.24,<3
+compressai==1.2.8
+psutil>=5.9
+matplotlib>=3.7,<4

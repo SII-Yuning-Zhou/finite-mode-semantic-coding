@@ -1,0 +1,361 @@
+{
+  "status": "LOCAL_CANDIDATE_VALIDATED",
+  "date": "2026-10-30",
+  "clean_directory_outside_original_repository": true,
+  "inherited_pythonpath_removed": true,
+  "local_module_isolation": "PASS",
+  "reproduction": {
+    "status": "PASS_WITH_SKIPS",
+    "scope": "Frozen-artifact integrity, theory/archive arithmetic, original-profile reaggregation and portable plotting; not neural training or latency measurement replay",
+    "python": "3.11.4",
+    "steps": [
+      {
+        "name": "frozen_artifacts",
+        "argv": [
+          "python",
+          "neural/verify_frozen_artifacts.py",
+          "--output",
+          "<PACKAGE_ROOT>\\outputs\\frozen_artifacts_validation.json"
+        ],
+        "seconds": 1.2794,
+        "returncode": 0,
+        "status": "PASS",
+        "result": {
+          "status": "PASS",
+          "imported_files_verified": 26,
+          "profile_reports": 8,
+          "ledger_rows": 80,
+          "raw_timing_series_recomputed": 160,
+          "raw_timing_samples": 16000
+        }
+      },
+      {
+        "name": "theory",
+        "argv": [
+          "python",
+          "-m",
+          "theory.verify",
+          "--output",
+          "<PACKAGE_ROOT>\\outputs\\theory_verification.json"
+        ],
+        "seconds": 3.2589,
+        "returncode": 0,
+        "status": "PASS",
+        "result": {
+          "status": "PASS",
+          "scope": "CPU numerical reproduction; no neural training; no full Monte Carlo rerun",
+          "strict_bernoulli_interval_certificate": "PASS",
+          "strict_bernoulli_parameters": {
+            "q": 0.18,
+            "y": 0.1,
+            "epsilon": 0.235,
+            "R": 0.082,
+            "C": 0.9,
+            "Rc": 0.78
+          },
+          "strict_bernoulli_k3": {
+            "weights": [
+              0.0,
+              0.11914161509607965,
+              0.8785545092827056,
+              0.0023038756212147016
+            ],
+            "distortion": 0.2791706047763627,
+            "payload_rate": 0.08102547761783767,
+            "common_randomness": 0.549972125999971,
+            "task_entropy_mode_aware": 0.9,
+            "task_entropy_output_only": 0.9120210315146307,
+            "support": 3
+          },
+          "strict_bernoulli_k4": {
+            "weights": [
+              0.03210930015327659,
+              0.08703231494280306,
+              0.8580045571846087,
+              0.022853827719311715
+            ],
+            "distortion": 0.26021327396586824,
+            "payload_rate": 0.08102547761783767,
+            "common_randomness": 0.7799999999999999,
+            "task_entropy_mode_aware": 0.9,
+            "task_entropy_output_only": 0.9146513348192932,
+            "support": 4
+          },
+          "nonbernoulli_vertex_system_counts": {
+            "total_vertex_systems": 210,
+            "support_size_2_systems": 28,
+            "support_size_3_systems": 112,
+            "support_size_4_systems": 70,
+            "singular": 6,
+            "certified_negative_weight": 160,
+            "certified_budget_violation": 32,
+            "certified_feasible": 12,
+            "ambiguous": 0
+          },
+          "nonbernoulli_k3_distortion": 0.42094906840647883,
+          "nonbernoulli_k4_distortion": 0.4029018567470432,
+          "nonbernoulli_gap_interval": "[0.01804721165943563142304053061551554969198633059852818667860705431995097293866364562509, 0.01804721165943563142304053061551554969198633059852818667860705431995097293867421101587]",
+          "nonbernoulli_gap_display_bounds_binary64": [
+            0.018047211659435628,
+            0.018047211659435628
+          ],
+          "archived_simulation_points_checked": 90,
+          "archived_analytical_recomputation_max_abs_delta": 8.110317972764847e-11,
+          "fresh_bit_sampler_expected_bits": 1.75,
+          "fresh_bit_sampler_smoke_draws": 20000,
+          "fresh_bit_sampler_smoke_measured_bits": 1.7374,
+          "smoke_channel_symbols": 10000,
+          "smoke_is_not_the_archived_paper_experiment": true
+        }
+      },
+      {
+        "name": "neural_records",
+        "argv": [
+          "python",
+          "neural/quick_verify.py"
+        ],
+        "seconds": 0.3126,
+        "returncode": 0,
+        "status": "PASS",
+        "result": {
+          "status": "PASS",
+          "raw_observations": 100,
+          "paired_L1_controls": 20,
+          "nontrivial_observations": 80,
+          "groups": 20,
+          "repetitions_per_group": 5,
+          "table_IV_recomputed": [
+            {
+              "lambda_R": 0,
+              "marginal_bpp": 1.3397208163265306,
+              "conditional_bpp": 1.339614693877551,
+              "saved_bits_per_image": 0.08319999999997663,
+              "saved_payload_percent": 0.007921236102798358
+            },
+            {
+              "lambda_R": 200,
+              "marginal_bpp": 0.6946155102040816,
+              "conditional_bpp": 0.6892195918367348,
+              "saved_bits_per_image": 4.23039999999995,
+              "saved_payload_percent": 0.7768208869625624
+            },
+            {
+              "lambda_R": 5000,
+              "marginal_bpp": 0.6003216326530613,
+              "conditional_bpp": 0.5910955102040817,
+              "saved_bits_per_image": 7.23327999999999,
+              "saved_payload_percent": 1.5368632324984952
+            },
+            {
+              "lambda_R": 50000,
+              "marginal_bpp": 0.5574122448979592,
+              "conditional_bpp": 0.5481632653061225,
+              "saved_bits_per_image": 7.251199999999958,
+              "saved_payload_percent": 1.6592709752061179
+            }
+          ],
+          "torch_or_checkpoint_required": false,
+          "scope": "Data arithmetic and archived report checks; not a rerun of training, ANS, or latency measurements"
+        }
+      },
+      {
+        "name": "figure_sources",
+        "argv": [
+          "python",
+          "-m",
+          "reproduce.check_data",
+          "--output",
+          "<PACKAGE_ROOT>\\outputs\\figure_source_checks.json"
+        ],
+        "seconds": 0.7405,
+        "returncode": 0,
+        "status": "PASS",
+        "result": {
+          "status": "PASS",
+          "phase_positive_values": 6309,
+          "figure_statistics": {
+            "2": {
+              "soft_observation_centers": 0,
+              "CI_segments": 0
+            },
+            "3": {
+              "soft_observation_centers": 0,
+              "CI_segments": 0
+            },
+            "4": {
+              "soft_observation_centers": 90,
+              "CI_segments": 90
+            },
+            "5": {
+              "soft_observation_centers": 360,
+              "CI_segments": 270
+            },
+            "6": {
+              "soft_observation_centers": 80,
+              "CI_segments": 80
+            }
+          }
+        }
+      },
+      {
+        "name": "tables",
+        "argv": [
+          "python",
+          "-m",
+          "reproduce.tables",
+          "--output",
+          "<PACKAGE_ROOT>\\outputs\\tables"
+        ],
+        "seconds": 0.4716,
+        "returncode": 0,
+        "status": "PASS",
+        "result": {
+          "status": "PASS",
+          "table_IV_rows": 4,
+          "table_V_status": "RECOMPUTED_FROM_ORIGINAL_PROFILES",
+          "table_V_source_profiles": 8,
+          "table_V_ledger_rows": 80
+        }
+      },
+      {
+        "name": "figures",
+        "argv": [
+          "python",
+          "-m",
+          "reproduce.figures",
+          "--output",
+          "<PACKAGE_ROOT>\\outputs\\figures"
+        ],
+        "seconds": 24.2057,
+        "returncode": 0,
+        "status": "PASS",
+        "result": {
+          "status": "PASS",
+          "figures": 5,
+          "output": "<PACKAGE_ROOT>\\outputs\\figures"
+        }
+      },
+      {
+        "name": "reproduction_tests",
+        "argv": [
+          "python",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "tests/reproduce",
+          "-v"
+        ],
+        "seconds": 0.3723,
+        "returncode": 0,
+        "status": "PASS",
+        "tests_run": 5
+      },
+      {
+        "name": "theory_tests",
+        "argv": [
+          "python",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "tests/theory",
+          "-v"
+        ],
+        "seconds": 1.6295,
+        "returncode": 0,
+        "status": "PASS",
+        "tests_run": 19
+      },
+      {
+        "name": "neural_config_tests",
+        "argv": [
+          "python",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "neural",
+          "-p",
+          "test_release_config.py",
+          "-v"
+        ],
+        "seconds": 0.4011,
+        "returncode": 0,
+        "status": "PASS",
+        "tests_run": 1
+      },
+      {
+        "name": "classifier_gate_tests",
+        "argv": [
+          "python",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "neural",
+          "-p",
+          "test_iclr_mnist_classifier_gate.py",
+          "-v"
+        ],
+        "seconds": 0.4442,
+        "returncode": 0,
+        "status": "PASS",
+        "tests_run": 3
+      },
+      {
+        "name": "ans_tests",
+        "argv": [
+          "python",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "neural",
+          "-p",
+          "test_iclr_mnist_conditional_rate_v8.py",
+          "-v"
+        ],
+        "seconds": 0.4478,
+        "returncode": 0,
+        "status": "SKIP",
+        "tests_run": 4,
+        "skipped": 4
+      }
+    ],
+    "additional_artifacts": "Original frozen neural weights and endpoint profiles are included; the standard-library path does not execute the checkpoints"
+  },
+  "payload_checks": {
+    "status": "PASS",
+    "python_files_parsed": 59,
+    "credential_pattern_hits": [],
+    "scope": "Selected release text only; no old Git history is distributed; this is not an exhaustive security/legal audit"
+  },
+  "inherited_evidence_preservation": {
+    "status": "PASS",
+    "byte_identical_inherited_evidence_files": 75,
+    "scope": "Original theory/figure data, publication assets, all v81 reports and paired CSVs, retained Table V transcription"
+  },
+  "artifact_integration_tests": {
+    "status": "PASS",
+    "tests_run": 11
+  },
+  "frozen_artifacts": {
+    "status": "PASS",
+    "report": "validation/frozen_artifacts_validation.json"
+  },
+  "checkpoint_and_cpu_smoke": {
+    "status": "PASS",
+    "report": "validation/checkpoint_validation.json"
+  },
+  "linux_ans_regression": {
+    "status": "PASS",
+    "passed": 4,
+    "skipped": 0,
+    "report": "validation/ans_regression_validation.json"
+  },
+  "full_neural_replay": "NOT_RUN: no full 5000-image dataset replay, training, or new endpoint benchmark in this packaging step",
+  "original_edge_profile_reaggregation": "PASS: eight original reports; 80 ledger rows; Table V reconstructed from measurements",
+  "historical_validation": "validation/rc1_validation_report.json retains the previous candidate record; its pending-input statements are historical",
+  "publication": "Not published; no GitHub visibility, commit, push, or DOI action performed"
+}

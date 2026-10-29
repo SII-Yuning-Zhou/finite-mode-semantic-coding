@@ -1,0 +1,581 @@
+{
+  "status": "PASS",
+  "scope": "Frozen-file identity, original timing-sample statistics and archived-profile reaggregation; not a new latency/GPU measurement or model execution",
+  "imported_files_verified": 26,
+  "checkpoint_files_verified": 5,
+  "original_checkpoint_bytes_unchanged": true,
+  "source_archive_sha256": "b6de108d7597eca3435c923859a97cf10e00c42a77147cda32fb2ebee2e96328",
+  "source_archive_rehashed": false,
+  "profile_reports": 8,
+  "ledger_rows": 80,
+  "raw_timing_series_recomputed": 160,
+  "raw_timing_samples": 16000,
+  "source_json_and_csv_ledgers_matched": true,
+  "profile_v81_links": [
+    {
+      "rate_weight": 0,
+      "device": "cpu",
+      "checkpoint": "results/iclr_mnist/s1_rate_calibration_v7/s1_rate_calibration_v7_s20260811_lr0_continuous/final.pt",
+      "checkpoint_sha256": "90e8e0915703ba1c46753b4b7a80d92253ee76d7d3516a37ea72f23ed8d24b06",
+      "config_fingerprint": "02C9404212E087A8EF8462ACA4C2125979533F2DABBDA283A201448044A34974",
+      "protocol_fingerprint": "BC171EDC39C8DE8FE71AC222E7573D8DA9B0A8729A26E276F83E1D63D9CFF2A3",
+      "v81_repetitions_matched": 5
+    },
+    {
+      "rate_weight": 0,
+      "device": "cuda:0",
+      "checkpoint": "results/iclr_mnist/s1_rate_calibration_v7/s1_rate_calibration_v7_s20260811_lr0_continuous/final.pt",
+      "checkpoint_sha256": "90e8e0915703ba1c46753b4b7a80d92253ee76d7d3516a37ea72f23ed8d24b06",
+      "config_fingerprint": "02C9404212E087A8EF8462ACA4C2125979533F2DABBDA283A201448044A34974",
+      "protocol_fingerprint": "BC171EDC39C8DE8FE71AC222E7573D8DA9B0A8729A26E276F83E1D63D9CFF2A3",
+      "v81_repetitions_matched": 5
+    },
+    {
+      "rate_weight": 200,
+      "device": "cpu",
+      "checkpoint": "results/iclr_mnist/s1_rate_calibration_v7/s1_rate_calibration_v7_s20260811_lr200_continuous/final.pt",
+      "checkpoint_sha256": "848ddecad8e011a53c917a434b7c115265449ef22fbed1c99bd5c82dfebc379c",
+      "config_fingerprint": "AFEE3B83E09A1F69CB471BA2DD4A24CC89B8658765318E7B9413EC73A49D380B",
+      "protocol_fingerprint": "5D70C7698D5D544D330BF5CC096F4DC96CE4881ED0755AE5877C14C4E0EDC7B8",
+      "v81_repetitions_matched": 5
+    },
+    {
+      "rate_weight": 200,
+      "device": "cuda:0",
+      "checkpoint": "results/iclr_mnist/s1_rate_calibration_v7/s1_rate_calibration_v7_s20260811_lr200_continuous/final.pt",
+      "checkpoint_sha256": "848ddecad8e011a53c917a434b7c115265449ef22fbed1c99bd5c82dfebc379c",
+      "config_fingerprint": "AFEE3B83E09A1F69CB471BA2DD4A24CC89B8658765318E7B9413EC73A49D380B",
+      "protocol_fingerprint": "5D70C7698D5D544D330BF5CC096F4DC96CE4881ED0755AE5877C14C4E0EDC7B8",
+      "v81_repetitions_matched": 5
+    },
+    {
+      "rate_weight": 5000,
+      "device": "cpu",
+      "checkpoint": "results/iclr_mnist/s1_rate_calibration_v7/s1_rate_calibration_v7_s20260811_lr5000_continuous/final.pt",
+      "checkpoint_sha256": "0ea46a452d8638a84cd7b1b9473111ed030078545215bb6c0e94f067ad3d7c5b",
+      "config_fingerprint": "16B05CDAFA580ABFC3950006D0E1B7EAF0E6C9A526F367E0DAE5B11F1EDA491A",
+      "protocol_fingerprint": "C5E865116127B871A7CC49F5B6CF85226DDA15B7B0A905573F18D7ADFD54BFB5",
+      "v81_repetitions_matched": 5
+    },
+    {
+      "rate_weight": 5000,
+      "device": "cuda:0",
+      "checkpoint": "results/iclr_mnist/s1_rate_calibration_v7/s1_rate_calibration_v7_s20260811_lr5000_continuous/final.pt",
+      "checkpoint_sha256": "0ea46a452d8638a84cd7b1b9473111ed030078545215bb6c0e94f067ad3d7c5b",
+      "config_fingerprint": "16B05CDAFA580ABFC3950006D0E1B7EAF0E6C9A526F367E0DAE5B11F1EDA491A",
+      "protocol_fingerprint": "C5E865116127B871A7CC49F5B6CF85226DDA15B7B0A905573F18D7ADFD54BFB5",
+      "v81_repetitions_matched": 5
+    },
+    {
+      "rate_weight": 50000,
+      "device": "cpu",
+      "checkpoint": "results/iclr_mnist/s1_rate_calibration_v7/s1_rate_calibration_v7_s20260811_lr50000_continuous/final.pt",
+      "checkpoint_sha256": "d80110f0215cd6ba525785b98118f2757ab03383ec691f8804a206cdb79a7d0f",
+      "config_fingerprint": "4AE4610A28C284D5353509FC1EFD12D3B3589BF7AE82A1852DB7A2F1DD83CA94",
+      "protocol_fingerprint": "83F7B90E5D615945DF9E34C8A4F29520BCA3F2D9B0DC1DC9A14BA93C4BB94A55",
+      "v81_repetitions_matched": 5
+    },
+    {
+      "rate_weight": 50000,
+      "device": "cuda:0",
+      "checkpoint": "results/iclr_mnist/s1_rate_calibration_v7/s1_rate_calibration_v7_s20260811_lr50000_continuous/final.pt",
+      "checkpoint_sha256": "d80110f0215cd6ba525785b98118f2757ab03383ec691f8804a206cdb79a7d0f",
+      "config_fingerprint": "4AE4610A28C284D5353509FC1EFD12D3B3589BF7AE82A1852DB7A2F1DD83CA94",
+      "protocol_fingerprint": "83F7B90E5D615945DF9E34C8A4F29520BCA3F2D9B0DC1DC9A14BA93C4BB94A55",
+      "v81_repetitions_matched": 5
+    }
+  ],
+  "source_ledger_schema_note": "Original ledger omits seed column; current aggregation adds the verified common profile seed 20260811",
+  "table_V_recomputation": {
+    "status": "PASS",
+    "source_kind": "recomputed_from_original_edge_profile_json",
+    "source_profiles": 8,
+    "ledger_rows": 80,
+    "summary_rows": [
+      {
+        "device": "CPU",
+        "levels": 1,
+        "cdf_kib": 12.234375,
+        "static_sender_kib": 321.421875,
+        "encode_mean_min_ms": 0.7815717230550945,
+        "encode_mean_max_ms": 0.8072857884690166,
+        "encode_p95_min_ms": 0.8248545927926898,
+        "encode_p95_max_ms": 0.9215714992024003,
+        "decode_mean_min_ms": 0.9728270815685391,
+        "decode_mean_max_ms": 0.9955270146019757,
+        "decode_p95_min_ms": 0.9900027420371772,
+        "decode_p95_max_ms": 1.1123821139335632,
+        "source_kind": "recomputed_from_original_edge_profile_json",
+        "profile_count": 4,
+        "rate_weights": "0;200;5000;50000",
+        "path": "conditional"
+      },
+      {
+        "device": "CPU",
+        "levels": 31,
+        "cdf_kib": 379.265625,
+        "static_sender_kib": 688.453125,
+        "encode_mean_min_ms": 2.071599920745939,
+        "encode_mean_max_ms": 2.101417197845876,
+        "encode_p95_min_ms": 2.160039823502302,
+        "encode_p95_max_ms": 2.2285252460278566,
+        "decode_mean_min_ms": 2.3468188662081957,
+        "decode_mean_max_ms": 2.4347107601352036,
+        "decode_p95_min_ms": 2.454828575719148,
+        "decode_p95_max_ms": 2.5900069391354914,
+        "source_kind": "recomputed_from_original_edge_profile_json",
+        "profile_count": 4,
+        "rate_weights": "0;200;5000;50000",
+        "path": "conditional"
+      },
+      {
+        "device": "CUDA",
+        "levels": 1,
+        "cdf_kib": 12.234375,
+        "static_sender_kib": 321.421875,
+        "encode_mean_min_ms": 0.9073818614706397,
+        "encode_mean_max_ms": 0.9590443666093051,
+        "encode_p95_min_ms": 0.950103357899934,
+        "encode_p95_max_ms": 1.0745414998382332,
+        "decode_mean_min_ms": 0.7663782220333815,
+        "decode_mean_max_ms": 0.8281668205745518,
+        "decode_p95_min_ms": 0.8083899621851741,
+        "decode_p95_max_ms": 0.8949900977313517,
+        "source_kind": "recomputed_from_original_edge_profile_json",
+        "profile_count": 4,
+        "rate_weights": "0;200;5000;50000",
+        "path": "conditional"
+      },
+      {
+        "device": "CUDA",
+        "levels": 31,
+        "cdf_kib": 379.265625,
+        "static_sender_kib": 688.453125,
+        "encode_mean_min_ms": 2.191430078819394,
+        "encode_mean_max_ms": 2.277370374649763,
+        "encode_p95_min_ms": 2.2395440726540983,
+        "encode_p95_max_ms": 2.3960931575857103,
+        "decode_mean_min_ms": 2.1640635025687516,
+        "decode_mean_max_ms": 2.2008904605172575,
+        "decode_p95_min_ms": 2.195518277585507,
+        "decode_p95_max_ms": 2.289961592759937,
+        "source_kind": "recomputed_from_original_edge_profile_json",
+        "profile_count": 4,
+        "rate_weights": "0;200;5000;50000",
+        "path": "conditional"
+      }
+    ],
+    "transcription_comparison": [
+      {
+        "device": "CPU",
+        "levels": 1,
+        "field": "cdf_kib",
+        "recomputed": 12.234375,
+        "transcribed": 12.23,
+        "absolute_difference": 0.004374999999999574,
+        "rounding_tolerance": 0.005000001,
+        "status": "PASS"
+      },
+      {
+        "device": "CPU",
+        "levels": 1,
+        "field": "static_sender_kib",
+        "recomputed": 321.421875,
+        "transcribed": 321.42,
+        "absolute_difference": 0.0018749999999840838,
+        "rounding_tolerance": 0.005000001,
+        "status": "PASS"
+      },
+      {
+        "device": "CPU",
+        "levels": 1,
+        "field": "encode_mean_min_ms",
+        "recomputed": 0.7815717230550945,
+        "transcribed": 0.782,
+        "absolute_difference": 0.0004282769449055479,
+        "rounding_tolerance": 0.000500001,
+        "status": "PASS"
+      },
+      {
+        "device": "CPU",
+        "levels": 1,
+        "field": "encode_mean_max_ms",
+        "recomputed": 0.8072857884690166,
+        "transcribed": 0.807,
+        "absolute_difference": 0.00028578846901650135,
+        "rounding_tolerance": 0.000500001,
+        "status": "PASS"
+      },
+      {
+        "device": "CPU",
+        "levels": 1,
+        "field": "encode_p95_min_ms",
+        "recomputed": 0.8248545927926898,
+        "transcribed": 0.825,
+        "absolute_difference": 0.00014540720731015533,
+        "rounding_tolerance": 0.000500001,
+        "status": "PASS"
+      },
+      {
+        "device": "CPU",
+        "levels": 1,
+        "field": "encode_p95_max_ms",
+        "recomputed": 0.9215714992024003,
+        "transcribed": 0.922,
+        "absolute_difference": 0.00042850079759970683,
+        "rounding_tolerance": 0.000500001,
+        "status": "PASS"
+      },
+      {
+        "device": "CPU",
+        "levels": 1,
+        "field": "decode_mean_min_ms",
+        "recomputed": 0.9728270815685391,
+        "transcribed": 0.973,
+        "absolute_difference": 0.0001729184314608334,
+        "rounding_tolerance": 0.000500001,
+        "status": "PASS"
+      },
+      {
+        "device": "CPU",
+        "levels": 1,
+        "field": "decode_mean_max_ms",
+        "recomputed": 0.9955270146019757,
+        "transcribed": 0.996,
+        "absolute_difference": 0.00047298539802431705,
+        "rounding_tolerance": 0.000500001,
+        "status": "PASS"
+      },
+      {
+        "device": "CPU",
+        "levels": 1,
+        "field": "decode_p95_min_ms",
+        "recomputed": 0.9900027420371772,
+        "transcribed": 0.99,
+        "absolute_difference": 2.7420371772057806e-06,
+        "rounding_tolerance": 0.000500001,
+        "status": "PASS"
+      },
+      {
+        "device": "CPU",
+        "levels": 1,
+        "field": "decode_p95_max_ms",
+        "recomputed": 1.1123821139335632,
+        "transcribed": 1.112,
+        "absolute_difference": 0.00038211393356313295,
+        "rounding_tolerance": 0.000500001,
+        "status": "PASS"
+      },
+      {
+        "device": "CPU",
+        "levels": 31,
+        "field": "cdf_kib",
+        "recomputed": 379.265625,
+        "transcribed": 379.27,
+        "absolute_difference": 0.00437499999998181,
+        "rounding_tolerance": 0.005000001,
+        "status": "PASS"
+      },
+      {
+        "device": "CPU",
+        "levels": 31,
+        "field": "static_sender_kib",
+        "recomputed": 688.453125,
+        "transcribed": 688.45,
+        "absolute_difference": 0.0031249999999545253,
+        "rounding_tolerance": 0.005000001,
+        "status": "PASS"
+      },
+      {
+        "device": "CPU",
+        "levels": 31,
+        "field": "encode_mean_min_ms",
+        "recomputed": 2.071599920745939,
+        "transcribed": 2.072,
+        "absolute_difference": 0.0004000792540610476,
+        "rounding_tolerance": 0.000500001,
+        "status": "PASS"
+      },
+      {
+        "device": "CPU",
+        "levels": 31,
+        "field": "encode_mean_max_ms",
+        "recomputed": 2.101417197845876,
+        "transcribed": 2.101,
+        "absolute_difference": 0.0004171978458762382,
+        "rounding_tolerance": 0.000500001,
+        "status": "PASS"
+      },
+      {
+        "device": "CPU",
+        "levels": 31,
+        "field": "encode_p95_min_ms",
+        "recomputed": 2.160039823502302,
+        "transcribed": 2.16,
+        "absolute_difference": 3.982350230202769e-05,
+        "rounding_tolerance": 0.000500001,
+        "status": "PASS"
+      },
+      {
+        "device": "CPU",
+        "levels": 31,
+        "field": "encode_p95_max_ms",
+        "recomputed": 2.2285252460278566,
+        "transcribed": 2.229,
+        "absolute_difference": 0.00047475397214347126,
+        "rounding_tolerance": 0.000500001,
+        "status": "PASS"
+      },
+      {
+        "device": "CPU",
+        "levels": 31,
+        "field": "decode_mean_min_ms",
+        "recomputed": 2.3468188662081957,
+        "transcribed": 2.347,
+        "absolute_difference": 0.0001811337918042888,
+        "rounding_tolerance": 0.000500001,
+        "status": "PASS"
+      },
+      {
+        "device": "CPU",
+        "levels": 31,
+        "field": "decode_mean_max_ms",
+        "recomputed": 2.4347107601352036,
+        "transcribed": 2.435,
+        "absolute_difference": 0.00028923986479645336,
+        "rounding_tolerance": 0.000500001,
+        "status": "PASS"
+      },
+      {
+        "device": "CPU",
+        "levels": 31,
+        "field": "decode_p95_min_ms",
+        "recomputed": 2.454828575719148,
+        "transcribed": 2.455,
+        "absolute_difference": 0.00017142428085215045,
+        "rounding_tolerance": 0.000500001,
+        "status": "PASS"
+      },
+      {
+        "device": "CPU",
+        "levels": 31,
+        "field": "decode_p95_max_ms",
+        "recomputed": 2.5900069391354914,
+        "transcribed": 2.59,
+        "absolute_difference": 6.939135491546011e-06,
+        "rounding_tolerance": 0.000500001,
+        "status": "PASS"
+      },
+      {
+        "device": "CUDA",
+        "levels": 1,
+        "field": "cdf_kib",
+        "recomputed": 12.234375,
+        "transcribed": 12.23,
+        "absolute_difference": 0.004374999999999574,
+        "rounding_tolerance": 0.005000001,
+        "status": "PASS"
+      },
+      {
+        "device": "CUDA",
+        "levels": 1,
+        "field": "static_sender_kib",
+        "recomputed": 321.421875,
+        "transcribed": 321.42,
+        "absolute_difference": 0.0018749999999840838,
+        "rounding_tolerance": 0.005000001,
+        "status": "PASS"
+      },
+      {
+        "device": "CUDA",
+        "levels": 1,
+        "field": "encode_mean_min_ms",
+        "recomputed": 0.9073818614706397,
+        "transcribed": 0.907,
+        "absolute_difference": 0.00038186147063967724,
+        "rounding_tolerance": 0.000500001,
+        "status": "PASS"
+      },
+      {
+        "device": "CUDA",
+        "levels": 1,
+        "field": "encode_mean_max_ms",
+        "recomputed": 0.9590443666093051,
+        "transcribed": 0.959,
+        "absolute_difference": 4.436660930517977e-05,
+        "rounding_tolerance": 0.000500001,
+        "status": "PASS"
+      },
+      {
+        "device": "CUDA",
+        "levels": 1,
+        "field": "encode_p95_min_ms",
+        "recomputed": 0.950103357899934,
+        "transcribed": 0.95,
+        "absolute_difference": 0.00010335789993409783,
+        "rounding_tolerance": 0.000500001,
+        "status": "PASS"
+      },
+      {
+        "device": "CUDA",
+        "levels": 1,
+        "field": "encode_p95_max_ms",
+        "recomputed": 1.0745414998382332,
+        "transcribed": 1.075,
+        "absolute_difference": 0.00045850016176673947,
+        "rounding_tolerance": 0.000500001,
+        "status": "PASS"
+      },
+      {
+        "device": "CUDA",
+        "levels": 1,
+        "field": "decode_mean_min_ms",
+        "recomputed": 0.7663782220333815,
+        "transcribed": 0.766,
+        "absolute_difference": 0.0003782220333814479,
+        "rounding_tolerance": 0.000500001,
+        "status": "PASS"
+      },
+      {
+        "device": "CUDA",
+        "levels": 1,
+        "field": "decode_mean_max_ms",
+        "recomputed": 0.8281668205745518,
+        "transcribed": 0.828,
+        "absolute_difference": 0.0001668205745518625,
+        "rounding_tolerance": 0.000500001,
+        "status": "PASS"
+      },
+      {
+        "device": "CUDA",
+        "levels": 1,
+        "field": "decode_p95_min_ms",
+        "recomputed": 0.8083899621851741,
+        "transcribed": 0.808,
+        "absolute_difference": 0.0003899621851740642,
+        "rounding_tolerance": 0.000500001,
+        "status": "PASS"
+      },
+      {
+        "device": "CUDA",
+        "levels": 1,
+        "field": "decode_p95_max_ms",
+        "recomputed": 0.8949900977313517,
+        "transcribed": 0.895,
+        "absolute_difference": 9.902268648276369e-06,
+        "rounding_tolerance": 0.000500001,
+        "status": "PASS"
+      },
+      {
+        "device": "CUDA",
+        "levels": 31,
+        "field": "cdf_kib",
+        "recomputed": 379.265625,
+        "transcribed": 379.27,
+        "absolute_difference": 0.00437499999998181,
+        "rounding_tolerance": 0.005000001,
+        "status": "PASS"
+      },
+      {
+        "device": "CUDA",
+        "levels": 31,
+        "field": "static_sender_kib",
+        "recomputed": 688.453125,
+        "transcribed": 688.45,
+        "absolute_difference": 0.0031249999999545253,
+        "rounding_tolerance": 0.005000001,
+        "status": "PASS"
+      },
+      {
+        "device": "CUDA",
+        "levels": 31,
+        "field": "encode_mean_min_ms",
+        "recomputed": 2.191430078819394,
+        "transcribed": 2.191,
+        "absolute_difference": 0.00043007881939427506,
+        "rounding_tolerance": 0.000500001,
+        "status": "PASS"
+      },
+      {
+        "device": "CUDA",
+        "levels": 31,
+        "field": "encode_mean_max_ms",
+        "recomputed": 2.277370374649763,
+        "transcribed": 2.277,
+        "absolute_difference": 0.0003703746497629723,
+        "rounding_tolerance": 0.000500001,
+        "status": "PASS"
+      },
+      {
+        "device": "CUDA",
+        "levels": 31,
+        "field": "encode_p95_min_ms",
+        "recomputed": 2.2395440726540983,
+        "transcribed": 2.24,
+        "absolute_difference": 0.00045592734590194084,
+        "rounding_tolerance": 0.000500001,
+        "status": "PASS"
+      },
+      {
+        "device": "CUDA",
+        "levels": 31,
+        "field": "encode_p95_max_ms",
+        "recomputed": 2.3960931575857103,
+        "transcribed": 2.396,
+        "absolute_difference": 9.315758571037946e-05,
+        "rounding_tolerance": 0.000500001,
+        "status": "PASS"
+      },
+      {
+        "device": "CUDA",
+        "levels": 31,
+        "field": "decode_mean_min_ms",
+        "recomputed": 2.1640635025687516,
+        "transcribed": 2.164,
+        "absolute_difference": 6.35025687514279e-05,
+        "rounding_tolerance": 0.000500001,
+        "status": "PASS"
+      },
+      {
+        "device": "CUDA",
+        "levels": 31,
+        "field": "decode_mean_max_ms",
+        "recomputed": 2.2008904605172575,
+        "transcribed": 2.201,
+        "absolute_difference": 0.00010953948274261549,
+        "rounding_tolerance": 0.000500001,
+        "status": "PASS"
+      },
+      {
+        "device": "CUDA",
+        "levels": 31,
+        "field": "decode_p95_min_ms",
+        "recomputed": 2.195518277585507,
+        "transcribed": 2.196,
+        "absolute_difference": 0.0004817224144932908,
+        "rounding_tolerance": 0.000500001,
+        "status": "PASS"
+      },
+      {
+        "device": "CUDA",
+        "levels": 31,
+        "field": "decode_p95_max_ms",
+        "recomputed": 2.289961592759937,
+        "transcribed": 2.29,
+        "absolute_difference": 3.840724006298757e-05,
+        "rounding_tolerance": 0.000500001,
+        "status": "PASS"
+      }
+    ],
+    "aggregation": "conditional path; min/max across four rate weights for each device and L",
+    "static_units": "KiB = bytes / 1024",
+    "latency_units": "ms per image",
+    "latency_measurements_replayed": false,
+    "source_root": "results/iclr_mnist/server_controller_edge_metrics_v1",
+    "transcription_reference": "data/neural/edge/table_v_transcribed.csv"
+  },
+  "latency_measurements_replayed": false,
+  "pytorch_pickle_loading_performed": false,
+  "classifier_metadata_present": true,
+  "privacy_redactions": 25
+}

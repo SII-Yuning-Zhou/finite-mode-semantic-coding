@@ -1,0 +1,35 @@
+{
+  "status": "PASS",
+  "checked_date": "2026-10-30",
+  "scope": "Four existing conditional-rANS regression tests on CPU; no MNIST download, training, full dataset replay or latency benchmark",
+  "runtime": {
+    "platform": "existing Ubuntu-24.04 WSL environment",
+    "python": "3.12.15",
+    "torch": "2.6.0+cu126",
+    "torchvision": "0.21.0+cu126",
+    "compressai": "1.2.8",
+    "numpy": "1.26.4",
+    "device": "cpu",
+    "environment_installed_or_modified": false
+  },
+  "command": "python -B -m unittest discover -s neural -p test_iclr_mnist_conditional_rate_v8.py -v",
+  "tests": 4,
+  "passed": 4,
+  "skipped": 0,
+  "failures": 0,
+  "errors": 0,
+  "test_names": [
+    "test_escape_tail_matches_compressai_bypass_roundtrip",
+    "test_escape_tail_requires_compressai_rans_precision",
+    "test_one_level_is_exact_marginal_identity_control",
+    "test_stateless_offset_schedule_and_ans_roundtrip"
+  ],
+  "separate_validator_safety_tests": {
+    "runtime": "Windows Python 3.11.4, no torch required",
+    "command": "python -B -m unittest discover -s neural -p test_checkpoint_validator.py -v",
+    "passed": 4,
+    "skipped": 0,
+    "checks": ["unsafe archive paths rejected", "metadata values not disclosed", "credential-like field names flagged", "historical/input output directories protected"]
+  },
+  "qualification": "This is a new CPU regression run in an available local environment, not the original NVIDIA 25.02 training/evaluation environment"
+}

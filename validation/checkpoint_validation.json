@@ -1,0 +1,478 @@
+{
+  "status": "PASS",
+  "runtime": {
+    "python": "3.12.15",
+    "torch": "2.6.0+cu126",
+    "device": "cpu",
+    "threads": 1,
+    "torch_cuda_build": "12.6",
+    "compressai": "1.2.8"
+  },
+  "safety": {
+    "weights_only": true,
+    "map_location": "cpu",
+    "unsafe_pickle_fallback": false,
+    "allowlisted_additional_globals": [],
+    "checkpoint_files_rewritten": false
+  },
+  "checkpoints": [
+    {
+      "relative_path": "results/iclr_mnist/classifiers/iclr_gray_resnet18_small_v2.pt",
+      "size_bytes": 11252112,
+      "sha256": "c4b7a7019ce9e50baa702849ed39ca0d838b0fc8aa73961612d728168c3150d9",
+      "unsupported_globals": [],
+      "safe_load": "PASS",
+      "root_keys": [
+        "classifier",
+        "classifier_gate",
+        "config_fingerprint",
+        "diagnostics",
+        "history",
+        "schema_version",
+        "seed"
+      ],
+      "metadata_scan": {
+        "private_absolute_path_fields": [],
+        "credential_like_key_fields": [],
+        "credential_pattern_fields": []
+      },
+      "finite_values": {
+        "tensors": 122,
+        "elements": 2801854,
+        "nonfinite_fields": []
+      },
+      "status": "PASS",
+      "state_dict_compatibility": "PASS_STRICT",
+      "cpu_forward": "PASS_SYNTHETIC_ZERO_INPUT"
+    },
+    {
+      "relative_path": "results/iclr_mnist/s1_rate_calibration_v7/s1_rate_calibration_v7_s20260811_lr0_continuous/final.pt",
+      "size_bytes": 12560059,
+      "sha256": "90e8e0915703ba1c46753b4b7a80d92253ee76d7d3516a37ea72f23ed8d24b06",
+      "unsupported_globals": [],
+      "safe_load": "PASS",
+      "root_keys": [
+        "classifier",
+        "classifier_pretraining",
+        "codec",
+        "config",
+        "config_fingerprint",
+        "discriminator",
+        "protocol_fingerprint",
+        "resources",
+        "schema_version",
+        "step"
+      ],
+      "metadata_scan": {
+        "private_absolute_path_fields": [
+          "$.classifier_pretraining[0].loaded_frozen_classifier"
+        ],
+        "credential_like_key_fields": [],
+        "credential_pattern_fields": []
+      },
+      "finite_values": {
+        "tensors": 187,
+        "elements": 3123516,
+        "nonfinite_fields": []
+      },
+      "status": "PASS",
+      "training_step": 3000,
+      "config_fingerprint": "02C9404212E087A8EF8462ACA4C2125979533F2DABBDA283A201448044A34974",
+      "protocol_fingerprint": "BC171EDC39C8DE8FE71AC222E7573D8DA9B0A8729A26E276F83E1D63D9CFF2A3",
+      "state_dict_compatibility": "PASS_STRICT_CODEC_CLASSIFIER_CRITIC",
+      "embedded_classifier_matches_standalone": true,
+      "cpu_smoke": {
+        "status": "PASS",
+        "input": "one synthetic normalized 28x28 ramp, not dataset samples",
+        "latent_shape": [
+          1,
+          12,
+          4,
+          4
+        ],
+        "reconstruction_shape": [
+          1,
+          1,
+          28,
+          28
+        ],
+        "classifier_shape": [
+          1,
+          10
+        ],
+        "neural_values_finite": true,
+        "ans_checks": [
+          {
+            "levels": 1,
+            "symbols_equal": true,
+            "latents_equal": true,
+            "stateless_indexes_equal": true,
+            "conditional_table_bytes": 12528,
+            "marginal_table_bytes": 12528,
+            "conditional_payload_bytes": 136,
+            "marginal_payload_bytes": 136
+          },
+          {
+            "levels": 3,
+            "symbols_equal": true,
+            "latents_equal": true,
+            "stateless_indexes_equal": true,
+            "conditional_table_bytes": 37584,
+            "marginal_table_bytes": 12528,
+            "conditional_payload_bytes": 136,
+            "marginal_payload_bytes": 136,
+            "edge_packet_roundtrips": {
+              "conditioned": {
+                "packet_bytes": 140,
+                "payload_equal": true,
+                "symbols_equal": true,
+                "latent_equal": true,
+                "reconstruction_equal": true
+              },
+              "marginal": {
+                "packet_bytes": 140,
+                "payload_equal": true,
+                "symbols_equal": true,
+                "latent_equal": true,
+                "reconstruction_equal": true
+              }
+            }
+          },
+          {
+            "levels": 31,
+            "symbols_equal": true,
+            "latents_equal": true,
+            "stateless_indexes_equal": true,
+            "conditional_table_bytes": 388368,
+            "marginal_table_bytes": 12528,
+            "conditional_payload_bytes": 136,
+            "marginal_payload_bytes": 136
+          }
+        ]
+      }
+    },
+    {
+      "relative_path": "results/iclr_mnist/s1_rate_calibration_v7/s1_rate_calibration_v7_s20260811_lr200_continuous/final.pt",
+      "size_bytes": 12560059,
+      "sha256": "848ddecad8e011a53c917a434b7c115265449ef22fbed1c99bd5c82dfebc379c",
+      "unsupported_globals": [],
+      "safe_load": "PASS",
+      "root_keys": [
+        "classifier",
+        "classifier_pretraining",
+        "codec",
+        "config",
+        "config_fingerprint",
+        "discriminator",
+        "protocol_fingerprint",
+        "resources",
+        "schema_version",
+        "step"
+      ],
+      "metadata_scan": {
+        "private_absolute_path_fields": [
+          "$.classifier_pretraining[0].loaded_frozen_classifier"
+        ],
+        "credential_like_key_fields": [],
+        "credential_pattern_fields": []
+      },
+      "finite_values": {
+        "tensors": 187,
+        "elements": 3123516,
+        "nonfinite_fields": []
+      },
+      "status": "PASS",
+      "training_step": 3000,
+      "config_fingerprint": "AFEE3B83E09A1F69CB471BA2DD4A24CC89B8658765318E7B9413EC73A49D380B",
+      "protocol_fingerprint": "5D70C7698D5D544D330BF5CC096F4DC96CE4881ED0755AE5877C14C4E0EDC7B8",
+      "state_dict_compatibility": "PASS_STRICT_CODEC_CLASSIFIER_CRITIC",
+      "embedded_classifier_matches_standalone": true,
+      "cpu_smoke": {
+        "status": "PASS",
+        "input": "one synthetic normalized 28x28 ramp, not dataset samples",
+        "latent_shape": [
+          1,
+          12,
+          4,
+          4
+        ],
+        "reconstruction_shape": [
+          1,
+          1,
+          28,
+          28
+        ],
+        "classifier_shape": [
+          1,
+          10
+        ],
+        "neural_values_finite": true,
+        "ans_checks": [
+          {
+            "levels": 1,
+            "symbols_equal": true,
+            "latents_equal": true,
+            "stateless_indexes_equal": true,
+            "conditional_table_bytes": 12528,
+            "marginal_table_bytes": 12528,
+            "conditional_payload_bytes": 84,
+            "marginal_payload_bytes": 84
+          },
+          {
+            "levels": 3,
+            "symbols_equal": true,
+            "latents_equal": true,
+            "stateless_indexes_equal": true,
+            "conditional_table_bytes": 37584,
+            "marginal_table_bytes": 12528,
+            "conditional_payload_bytes": 84,
+            "marginal_payload_bytes": 84,
+            "edge_packet_roundtrips": {
+              "conditioned": {
+                "packet_bytes": 88,
+                "payload_equal": true,
+                "symbols_equal": true,
+                "latent_equal": true,
+                "reconstruction_equal": true
+              },
+              "marginal": {
+                "packet_bytes": 88,
+                "payload_equal": true,
+                "symbols_equal": true,
+                "latent_equal": true,
+                "reconstruction_equal": true
+              }
+            }
+          },
+          {
+            "levels": 31,
+            "symbols_equal": true,
+            "latents_equal": true,
+            "stateless_indexes_equal": true,
+            "conditional_table_bytes": 388368,
+            "marginal_table_bytes": 12528,
+            "conditional_payload_bytes": 84,
+            "marginal_payload_bytes": 84
+          }
+        ]
+      }
+    },
+    {
+      "relative_path": "results/iclr_mnist/s1_rate_calibration_v7/s1_rate_calibration_v7_s20260811_lr5000_continuous/final.pt",
+      "size_bytes": 12560059,
+      "sha256": "0ea46a452d8638a84cd7b1b9473111ed030078545215bb6c0e94f067ad3d7c5b",
+      "unsupported_globals": [],
+      "safe_load": "PASS",
+      "root_keys": [
+        "classifier",
+        "classifier_pretraining",
+        "codec",
+        "config",
+        "config_fingerprint",
+        "discriminator",
+        "protocol_fingerprint",
+        "resources",
+        "schema_version",
+        "step"
+      ],
+      "metadata_scan": {
+        "private_absolute_path_fields": [
+          "$.classifier_pretraining[0].loaded_frozen_classifier"
+        ],
+        "credential_like_key_fields": [],
+        "credential_pattern_fields": []
+      },
+      "finite_values": {
+        "tensors": 187,
+        "elements": 3123516,
+        "nonfinite_fields": []
+      },
+      "status": "PASS",
+      "training_step": 3000,
+      "config_fingerprint": "16B05CDAFA580ABFC3950006D0E1B7EAF0E6C9A526F367E0DAE5B11F1EDA491A",
+      "protocol_fingerprint": "C5E865116127B871A7CC49F5B6CF85226DDA15B7B0A905573F18D7ADFD54BFB5",
+      "state_dict_compatibility": "PASS_STRICT_CODEC_CLASSIFIER_CRITIC",
+      "embedded_classifier_matches_standalone": true,
+      "cpu_smoke": {
+        "status": "PASS",
+        "input": "one synthetic normalized 28x28 ramp, not dataset samples",
+        "latent_shape": [
+          1,
+          12,
+          4,
+          4
+        ],
+        "reconstruction_shape": [
+          1,
+          1,
+          28,
+          28
+        ],
+        "classifier_shape": [
+          1,
+          10
+        ],
+        "neural_values_finite": true,
+        "ans_checks": [
+          {
+            "levels": 1,
+            "symbols_equal": true,
+            "latents_equal": true,
+            "stateless_indexes_equal": true,
+            "conditional_table_bytes": 12528,
+            "marginal_table_bytes": 12528,
+            "conditional_payload_bytes": 68,
+            "marginal_payload_bytes": 68
+          },
+          {
+            "levels": 3,
+            "symbols_equal": true,
+            "latents_equal": true,
+            "stateless_indexes_equal": true,
+            "conditional_table_bytes": 37584,
+            "marginal_table_bytes": 12528,
+            "conditional_payload_bytes": 68,
+            "marginal_payload_bytes": 68,
+            "edge_packet_roundtrips": {
+              "conditioned": {
+                "packet_bytes": 72,
+                "payload_equal": true,
+                "symbols_equal": true,
+                "latent_equal": true,
+                "reconstruction_equal": true
+              },
+              "marginal": {
+                "packet_bytes": 72,
+                "payload_equal": true,
+                "symbols_equal": true,
+                "latent_equal": true,
+                "reconstruction_equal": true
+              }
+            }
+          },
+          {
+            "levels": 31,
+            "symbols_equal": true,
+            "latents_equal": true,
+            "stateless_indexes_equal": true,
+            "conditional_table_bytes": 388368,
+            "marginal_table_bytes": 12528,
+            "conditional_payload_bytes": 68,
+            "marginal_payload_bytes": 68
+          }
+        ]
+      }
+    },
+    {
+      "relative_path": "results/iclr_mnist/s1_rate_calibration_v7/s1_rate_calibration_v7_s20260811_lr50000_continuous/final.pt",
+      "size_bytes": 12560059,
+      "sha256": "d80110f0215cd6ba525785b98118f2757ab03383ec691f8804a206cdb79a7d0f",
+      "unsupported_globals": [],
+      "safe_load": "PASS",
+      "root_keys": [
+        "classifier",
+        "classifier_pretraining",
+        "codec",
+        "config",
+        "config_fingerprint",
+        "discriminator",
+        "protocol_fingerprint",
+        "resources",
+        "schema_version",
+        "step"
+      ],
+      "metadata_scan": {
+        "private_absolute_path_fields": [
+          "$.classifier_pretraining[0].loaded_frozen_classifier"
+        ],
+        "credential_like_key_fields": [],
+        "credential_pattern_fields": []
+      },
+      "finite_values": {
+        "tensors": 187,
+        "elements": 3123516,
+        "nonfinite_fields": []
+      },
+      "status": "PASS",
+      "training_step": 3000,
+      "config_fingerprint": "4AE4610A28C284D5353509FC1EFD12D3B3589BF7AE82A1852DB7A2F1DD83CA94",
+      "protocol_fingerprint": "83F7B90E5D615945DF9E34C8A4F29520BCA3F2D9B0DC1DC9A14BA93C4BB94A55",
+      "state_dict_compatibility": "PASS_STRICT_CODEC_CLASSIFIER_CRITIC",
+      "embedded_classifier_matches_standalone": true,
+      "cpu_smoke": {
+        "status": "PASS",
+        "input": "one synthetic normalized 28x28 ramp, not dataset samples",
+        "latent_shape": [
+          1,
+          12,
+          4,
+          4
+        ],
+        "reconstruction_shape": [
+          1,
+          1,
+          28,
+          28
+        ],
+        "classifier_shape": [
+          1,
+          10
+        ],
+        "neural_values_finite": true,
+        "ans_checks": [
+          {
+            "levels": 1,
+            "symbols_equal": true,
+            "latents_equal": true,
+            "stateless_indexes_equal": true,
+            "conditional_table_bytes": 12528,
+            "marginal_table_bytes": 12528,
+            "conditional_payload_bytes": 60,
+            "marginal_payload_bytes": 60
+          },
+          {
+            "levels": 3,
+            "symbols_equal": true,
+            "latents_equal": true,
+            "stateless_indexes_equal": true,
+            "conditional_table_bytes": 37584,
+            "marginal_table_bytes": 12528,
+            "conditional_payload_bytes": 60,
+            "marginal_payload_bytes": 60,
+            "edge_packet_roundtrips": {
+              "conditioned": {
+                "packet_bytes": 64,
+                "payload_equal": true,
+                "symbols_equal": true,
+                "latent_equal": true,
+                "reconstruction_equal": true
+              },
+              "marginal": {
+                "packet_bytes": 64,
+                "payload_equal": true,
+                "symbols_equal": true,
+                "latent_equal": true,
+                "reconstruction_equal": true
+              }
+            }
+          },
+          {
+            "levels": 31,
+            "symbols_equal": true,
+            "latents_equal": true,
+            "stateless_indexes_equal": true,
+            "conditional_table_bytes": 388368,
+            "marginal_table_bytes": 12528,
+            "conditional_payload_bytes": 60,
+            "marginal_payload_bytes": 60
+          }
+        ]
+      }
+    }
+  ],
+  "cpu_smoke_requested": true,
+  "scope": "Checkpoint finite values/state compatibility and optional synthetic CPU/ANS smoke; no MNIST evaluation, training or endpoint timing",
+  "all_five_checkpoints_loaded": true,
+  "metadata_contains_private_paths": true,
+  "metadata_path_note": "Only field names are reported; original checkpoint bytes were retained unchanged"
+}

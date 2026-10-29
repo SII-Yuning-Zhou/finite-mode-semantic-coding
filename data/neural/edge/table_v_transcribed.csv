@@ -1,0 +1,5 @@
+device,levels,cdf_kib,static_sender_kib,encode_mean_min_ms,encode_mean_max_ms,encode_p95_min_ms,encode_p95_max_ms,decode_mean_min_ms,decode_mean_max_ms,decode_p95_min_ms,decode_p95_max_ms,source_kind
+CPU,1,12.23,321.42,0.782,0.807,0.825,0.922,0.973,0.996,0.990,1.112,manuscript_table_V_transcription_not_raw_profile
+CPU,31,379.27,688.45,2.072,2.101,2.160,2.229,2.347,2.435,2.455,2.590,manuscript_table_V_transcription_not_raw_profile
+CUDA,1,12.23,321.42,0.907,0.959,0.950,1.075,0.766,0.828,0.808,0.895,manuscript_table_V_transcription_not_raw_profile
+CUDA,31,379.27,688.45,2.191,2.277,2.240,2.396,2.164,2.201,2.196,2.290,manuscript_table_V_transcription_not_raw_profile

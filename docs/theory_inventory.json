@@ -1,0 +1,156 @@
+{
+  "status": "PASS",
+  "scope": "Selected theory code and complete archived point-level data; no neural dependencies",
+  "code_sources": [
+    {
+      "source": "audit_bernoulli_mo_advantage.py",
+      "release": "theory/audit_bernoulli_mo_advantage.py",
+      "core_algorithm_ast_unchanged": true,
+      "adaptations": "package-relative imports; CLI output defaults and bounded Git provenance only"
+    },
+    {
+      "source": "bernoulli_mode_limited.py",
+      "release": "theory/bernoulli_mode_limited.py",
+      "core_algorithm_ast_unchanged": true,
+      "adaptations": "package-relative imports; CLI output defaults and bounded Git provenance only"
+    },
+    {
+      "source": "general_finite_alphabet_vertex_certificate.py",
+      "release": "theory/general_finite_alphabet_vertex_certificate.py",
+      "core_algorithm_ast_unchanged": true,
+      "adaptations": "package-relative imports; CLI output defaults and bounded Git provenance only"
+    },
+    {
+      "source": "general_support_theorem_symbolic_audit.py",
+      "release": "theory/general_support_theorem_symbolic_audit.py",
+      "core_algorithm_ast_unchanged": true,
+      "adaptations": "package-relative imports; CLI output defaults and bounded Git provenance only"
+    },
+    {
+      "source": "k4_strict_open_set_certificate.py",
+      "release": "theory/k4_strict_open_set_certificate.py",
+      "core_algorithm_ast_unchanged": true,
+      "adaptations": "package-relative imports; CLI output defaults and bounded Git provenance only"
+    },
+    {
+      "source": "output_only_negative_finite_root.py",
+      "release": "theory/output_only_negative_finite_root.py",
+      "core_algorithm_ast_unchanged": true,
+      "adaptations": "package-relative imports; CLI output defaults and bounded Git provenance only"
+    },
+    {
+      "source": "output_only_positive_finite_root.py",
+      "release": "theory/output_only_positive_finite_root.py",
+      "core_algorithm_ast_unchanged": true,
+      "adaptations": "package-relative imports; CLI output defaults and bounded Git provenance only"
+    },
+    {
+      "source": "output_only_rb_theory_audit.py",
+      "release": "theory/output_only_rb_theory_audit.py",
+      "core_algorithm_ast_unchanged": true,
+      "adaptations": "package-relative imports; CLI output defaults and bounded Git provenance only"
+    },
+    {
+      "source": "output_only_root_free_drc.py",
+      "release": "theory/output_only_root_free_drc.py",
+      "core_algorithm_ast_unchanged": true,
+      "adaptations": "package-relative imports; CLI output defaults and bounded Git provenance only"
+    },
+    {
+      "source": "simulate_bernoulli_finite_mode.py",
+      "release": "theory/simulate_bernoulli_finite_mode.py",
+      "core_algorithm_ast_unchanged": true,
+      "adaptations": "package-relative imports; CLI output defaults and bounded Git provenance only"
+    }
+  ],
+  "datasets": [
+    {
+      "source": "results/bernoulli_mo_advantage/ab_region.csv",
+      "release": "data/theory/bernoulli_mo_advantage/ab_region.csv",
+      "bytes": 397301,
+      "byte_identical": true,
+      "rows": 3514
+    },
+    {
+      "source": "results/bernoulli_mo_advantage/rc_sweep.csv",
+      "release": "data/theory/bernoulli_mo_advantage/rc_sweep.csv",
+      "bytes": 34437,
+      "byte_identical": true,
+      "rows": 177
+    },
+    {
+      "source": "results/bernoulli_mo_advantage/summary.json",
+      "release": "data/theory/bernoulli_mo_advantage/summary.json",
+      "bytes": 1438,
+      "byte_identical": true
+    },
+    {
+      "source": "results/bernoulli_sim/bernoulli_finite_mode_sim_v1.csv",
+      "release": "data/theory/bernoulli_sim/bernoulli_finite_mode_sim_v1.csv",
+      "bytes": 29999,
+      "byte_identical": true,
+      "rows": 90
+    },
+    {
+      "source": "results/bernoulli_sim/bernoulli_finite_mode_sim_v1_summary.json",
+      "release": "data/theory/bernoulli_sim/bernoulli_finite_mode_sim_v1_summary.json",
+      "bytes": 839,
+      "byte_identical": true
+    },
+    {
+      "source": "results/general_finite_alphabet/ternary_binary_certificate_v1.json",
+      "release": "data/theory/general_finite_alphabet/ternary_binary_certificate_v1.json",
+      "bytes": 7637,
+      "byte_identical": true
+    },
+    {
+      "source": "results/general_finite_alphabet/ternary_binary_vertices_v1.csv",
+      "release": "data/theory/general_finite_alphabet/ternary_binary_vertices_v1.csv",
+      "bytes": 5394,
+      "byte_identical": true,
+      "rows": 12
+    }
+  ],
+  "new_release_entrypoints": [
+    "theory/__init__.py",
+    "theory/verify.py",
+    "tests/theory/test_public_theory.py"
+  ],
+  "archived_data_file_count": 7,
+  "portability_scan": "No private absolute paths or Codex/skills dependencies in theory/data",
+  "requirements_core": [
+    "numpy",
+    "mpmath"
+  ],
+  "requirements_optional": [
+    "sympy"
+  ],
+  "tested_commands": [
+    {
+      "command": "python -m theory.verify",
+      "result": "PASS",
+      "strict_Bernoulli_distortions": [
+        0.2791706047763627,
+        0.26021327396586824
+      ],
+      "nonBernoulli_vertex_systems": 210,
+      "archived_operating_points_checked": 90
+    },
+    {
+      "command": "python -m unittest discover -s tests/theory -v",
+      "result": "PASS",
+      "tests": 19
+    },
+    {
+      "command": "python -m theory.simulate_bernoulli_finite_mode --rc-min 0.78 --rc-max 0.78 --rc-step 0.05 --n 10000 --reps 2 --sampler-draws 1000 --seed 20260917 --output-dir outputs/bernoulli_smoke",
+      "result": "PASS",
+      "executed_operating_points": 3,
+      "formal_paper_run": false
+    }
+  ],
+  "not_rerun": [
+    "Full 90-point 10x1e6-symbol Monte Carlo",
+    "Large full branch/random symbolic audits"
+  ],
+  "data_scope_note": "Simulation CSV archives aggregate means and t intervals, not individual source draws or per-replication estimates; all 90 feasible rows retained, no sign-based filtering."
+}

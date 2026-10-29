@@ -1,0 +1,70 @@
+{
+  "scope": "Frozen MNIST conditional-rANS evidence and optional neural/edge execution code",
+  "artifact_status": "FROZEN_CHECKPOINTS_AND_ORIGINAL_EDGE_RECORDS_INCLUDED",
+  "release_version": "1.0.0",
+  "public_repository": "https://github.com/SII-Yuning-Zhou/finite-mode-semantic-coding",
+  "public_release": "https://github.com/SII-Yuning-Zhou/finite-mode-semantic-coding/releases/tag/v1.0.0",
+  "paper": "Finite-Mode Semantic Coding for Edge IoT under Target Distribution and Shared-Randomness Constraints",
+  "published_protocol": "UQ-CONDITIONAL-RANS-ESCAPE-V2",
+  "source_archive": "evidence_packages/conditional_rate_v81/conditional_rate_v81.tar.gz",
+  "source_archive_sha256": "48f54806e9fb51ee5a69f29ab63e44409a4aaf1b49ca0c2c258049dbc56509b0",
+  "data": {
+    "raw_observations": 100,
+    "summary_groups": 20,
+    "repetitions_per_group": 5,
+    "L1_controls": 20,
+    "nontrivial_comparisons": 80,
+    "formal_reports": 20,
+    "expanded_configurations": 20,
+    "source_csvs": ["figures/neural/conditional_rate_v81_raw.csv", "figures/neural/conditional_rate_v81_summary.csv"],
+    "public_csvs": ["data/neural/conditional_rate_v81_raw.csv", "data/neural/conditional_rate_v81_summary.csv"],
+    "source_csv_preservation": "Byte-identical copies",
+    "sanitization": "41 absolute path fields converted to repository-relative values; scientific values and all seeds unchanged; 22 logs excluded",
+    "historical_git_diff_clean": false,
+    "edge_table": "Eight original profiles in results/iclr_mnist/server_controller_edge_metrics_v1; Table V recomputed from 80 ledger rows; data/neural/edge/table_v_transcribed.csv retained as a separate transcription"
+  },
+  "source_code": {
+    "module_source": "validation_iclr_mnist/*.py except theorem-only bernoulli.py",
+    "module_destination": "neural/validation_iclr_mnist/",
+    "support_modules": ["validation_semcom/__init__.py", "validation_semcom/metrics.py", "validation_semcom/schedule.py"],
+    "entrypoints": ["run_iclr_mnist_validation.py", "run_iclr_mnist_grid.py", "prepare_iclr_mnist_classifier.py", "audit_iclr_mnist_conditional_rate_v8.py", "aggregate_iclr_mnist_conditional_rate_v81.py", "analyze_iclr_mnist_conditional_rate_v81.py", "profile_iclr_mnist_edge_deployment.py", "aggregate_edge_deployment_metrics.py"],
+    "release_adaptations": [
+      "Grid subprocess resolves the sibling neural entrypoint instead of assuming scripts live at repository root",
+      "Analysis archive hash is read from the explicit source record instead of a hardcoded constant",
+      "Analysis no longer emits an unconditional 4/4 unit-test pass; historical server test summary and local execution status are separate",
+      "New stdlib-only numerical verifier, v7-only configuration test, evidence-copy sanitizer and read-only missing-artifact exporter"
+    ],
+    "algorithms_unchanged": true
+  },
+  "configuration_sources": ["configs/iclr_mnist/grid_s1_architecture_gate_v7.json", "configs/iclr_mnist/grid_s1_rate_calibration_v7.json", "configs/iclr_mnist/classifier_reference_v1.json"],
+  "historical_rc1_local_validation": {
+    "python": "3.11.4, Windows",
+    "quick_verify": "PASS: 100 observations, controls, interval arithmetic and Table IV endpoints",
+    "frozen_config_test": "1 PASS",
+    "classifier_gate_tests": "3 PASS",
+    "ans_roundtrip_tests": "4 SKIPPED: torch/compressai unavailable; NOT a local neural success claim",
+    "historical_server_ans_tests": "4 PASS in original server log, independently summarized with source-member checksum",
+    "archived_report_reanalysis": "PASS_WITH_PROVENANCE_WARNING, original git_diff_clean=false retained",
+    "python_syntax": "29 files parsed successfully",
+    "exporter_safety": "Output-inside-repository rejected; outside-repository --list-only executed successfully without creating an archive",
+    "neural_training_or_latency_rerun": "NOT EXECUTED"
+  },
+  "bundled_frozen_assets_rc2": {
+    "frozen_codec_checkpoints": 4,
+    "frozen_classifier_checkpoint": 1,
+    "original_edge_profile_JSONs": 8,
+    "expanded_edge_configurations": 8,
+    "artifact_source_manifest": "data/neural/frozen_artifacts_manifest.json",
+    "artifact_checks": "validation/frozen_artifacts_validation.json",
+    "checkpoint_cpu_checks": "validation/checkpoint_validation.json",
+    "edge_profile_directory": "results/iclr_mnist/server_controller_edge_metrics_v1",
+    "author_transfer_tool": "neural/export_missing_artifacts.sh",
+    "public_download_url": "https://github.com/SII-Yuning-Zhou/finite-mode-semantic-coding/releases/tag/v1.0.0"
+  },
+  "third_party": {
+    "dependencies_not_vendored": ["PyTorch", "torchvision", "CompressAI", "NumPy", "Matplotlib", "psutil"],
+    "mnist_images_bundled": false,
+    "third_party_pretrained_weights_bundled": false,
+    "licensing": "Original dependency/dataset terms apply; no third-party license is reassigned"
+  }
+}

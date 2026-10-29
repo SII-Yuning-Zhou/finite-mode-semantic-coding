@@ -1,0 +1,101 @@
+{
+  "manuscript_baseline": "English V53, 2026-10-29",
+  "scope": "Six archived publication PDFs; portable numeric replots of Figs. 2-6; Table IV recomputation; Table V labeled transcription checks",
+  "publication_pdf_identity": "Copied byte-for-byte from the six includegraphics assets used in V53",
+  "portable_cli": "python -m reproduce.figures --output outputs/figures",
+  "fast_data_cli": "python -m reproduce.check_data --output outputs/data_checks.json",
+  "table_cli": "python -m reproduce.tables --output outputs/tables",
+  "runtime_dependencies": ["numpy", "matplotlib"],
+  "source_generation": "Accepted Matplotlib scientific arrays exported once, before reading into the independent portable renderer; no PDF digitization",
+  "standard_json": true,
+  "nonfinite_values": "null restores original masked cells / NaN line breaks; never filled with zero or interpolated",
+  "pixel_identical_replot_claim": false,
+  "publication_font_assets": "Retained inside archived PDFs; no standalone proprietary font binaries redistributed",
+  "replot_fonts": "DejaVu Sans and STIX supplied by Matplotlib",
+  "figures": [
+    {
+      "figure": 1,
+      "public_pdf": "figures/publication/fig1.pdf",
+      "source_workspace_relative": "manuscript_tcom/overleaf_english_v53_20261029/figures/fig01_system_v51.pdf",
+      "role": "Fixed system schematic; archived asset"
+    },
+    {
+      "figure": 2,
+      "public_pdf": "figures/publication/fig2.pdf",
+      "source_workspace_relative": "manuscript_tcom/overleaf_english_v53_20261029/figures/fig03_geometry_v51.pdf",
+      "numeric_input": "data/figures/fig2_scene.json",
+      "development_builder": "plot_fig23_v45_20261029.geometry with V47 probability-axis labels",
+      "exact_optimum_points": 2,
+      "parameters": {"q": 0.18, "y": 0.10, "epsilon": 0.235, "R": 0.11, "C": 0.90, "Rc": 0.78}
+    },
+    {
+      "figure": 3,
+      "public_pdf": "figures/publication/fig3.pdf",
+      "source_workspace_relative": "manuscript_tcom/overleaf_english_v53_20261029/figures/fig04_phase_v51.pdf",
+      "numeric_input": "data/figures/fig3_scene.json",
+      "source_csv": "data/figures/source/k4_rrc_phase_diagram_v2.csv",
+      "development_builder": "plot_fig23_v45_20261029.phase with V50 STIX certificate labels",
+      "paired_grid_cells": 20402,
+      "positive_values_matched_to_source_csv": 6309,
+      "certified_witnesses": 3,
+      "grid_maximum_markers": 2
+    },
+    {
+      "figure": 4,
+      "public_pdf": "figures/publication/fig4.pdf",
+      "source_workspace_relative": "manuscript_tcom/overleaf_english_v53_20261029/figures/fig05_mechanism_v51.pdf",
+      "numeric_input": "data/figures/fig4_scene.json",
+      "development_builder": "plot_fig4d_corner_v48_20261029.build",
+      "source_data": ["data/theory/bernoulli_sim/bernoulli_finite_mode_sim_v1.csv", "data/theory/bernoulli_mo_advantage/rc_sweep.csv", "data/figures/source/fig_resource_curves_v1.csv", "data/figures/source/k4_rrc_phase_diagram_v2.csv"],
+      "observed_means": 90,
+      "confidence_interval_segments": 90
+    },
+    {
+      "figure": 5,
+      "public_pdf": "figures/publication/fig5.pdf",
+      "source_workspace_relative": "manuscript_tcom/overleaf_english_v53_20261029/figures/fig06_resources_v51.pdf",
+      "numeric_input": "data/figures/fig5_scene.json",
+      "development_builder": "plot_fig5_panel_keys_v46_20261029.build_panel_keys_figure",
+      "source_csv": "data/theory/bernoulli_sim/bernoulli_finite_mode_sim_v1.csv",
+      "observed_means": 360,
+      "resource_confidence_interval_segments": 270,
+      "sampler_observed_means": 90
+    },
+    {
+      "figure": 6,
+      "public_pdf": "figures/publication/fig6.pdf",
+      "source_workspace_relative": "manuscript_tcom/overleaf_english_v53_20261029/figures/fig07_neural_v51.pdf",
+      "numeric_input": "data/figures/fig6_scene.json",
+      "development_builder": "plot_fig6_panel_keys_v46_20261029.build_neural_panel_keys",
+      "source_data": ["data/neural/conditional_rate_v81_raw.csv", "data/neural/conditional_rate_v81_summary.csv"],
+      "raw_repetition_records": 100,
+      "operating_point_groups": 20,
+      "observed_metric_means": 80,
+      "confidence_interval_segments": 80
+    }
+  ],
+  "table_IV": {
+    "status": "RECOMPUTED_PASS",
+    "source": "data/neural/conditional_rate_v81_raw.csv",
+    "rows": 4,
+    "schedule_repetitions_per_row": 5,
+    "comparison": "All marginal/conditional bpp, saved bits/image and saved percent agree with manuscript rounding"
+  },
+  "table_V": {
+    "status": "RECOMPUTED_FROM_ORIGINAL_PROFILES",
+    "source": "results/iclr_mnist/server_controller_edge_metrics_v1/edge_profile_rate_*.json",
+    "rows": 4,
+    "original_profiles": 8,
+    "ledger_rows": 80,
+    "transcription_reference": "data/neural/edge/table_v_transcribed.csv",
+    "independent_latency_reproduction": "NOT_RUN_REAGGREGATION_ONLY"
+  },
+  "validation": {
+    "standard_json_and_scene_csv_checks": "PASS",
+    "all_five_numeric_figures_replotted": "PASS",
+    "all_five_pngs_visually_inspected": true,
+    "table_IV_recomputed": "PASS",
+    "table_V_transcription_consistency": "PASS",
+    "no_training_or_large_grid_regeneration_run": true
+  }
+}

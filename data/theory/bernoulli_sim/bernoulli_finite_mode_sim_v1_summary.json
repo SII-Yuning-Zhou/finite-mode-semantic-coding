@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "protocol": "BERNOULLI-FINITE-MODE-OPERATIONAL-SIM-V1",
+  "parameters": {
+    "qx": 0.18,
+    "qy": 0.1,
+    "crossover": 0.235,
+    "rate": 0.11,
+    "task": 0.9
+  },
+  "grid": {
+    "rc_min": 0.0,
+    "rc_max": 2.0,
+    "rc_step": 0.05
+  },
+  "statistics": {
+    "n_per_rep": 1000000,
+    "reps": 10,
+    "base_seed": 20260917,
+    "sampler_draws": 200000
+  },
+  "git_commit": "b8cd518e9027acab9f88860a179403b7f0e68f37",
+  "points_simulated": 90,
+  "points_empirically_feasible": 90,
+  "max_abs_deviation_vs_analytical": 0.0007909480563740301,
+  "max_distortion_half_width": 0.0004891239378582511,
+  "knuth_yao_bound_violations": 0,
+  "strict_k4_gain_rc_values": [
+    0.6,
+    0.65,
+    0.7,
+    0.75,
+    0.8,
+    0.85,
+    0.9
+  ],
+  "csv": "bernoulli_finite_mode_sim_v1.csv"
+}

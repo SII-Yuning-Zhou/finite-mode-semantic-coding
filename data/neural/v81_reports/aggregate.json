@@ -1,0 +1,456 @@
+{
+  "schema_version": 2,
+  "status": "PASS",
+  "audit_protocol": "UQ-CONDITIONAL-RANS-ESCAPE-V2",
+  "technical_gate": {
+    "status": "PASS",
+    "failures": []
+  },
+  "scientific_gate": {
+    "status": "PASS",
+    "failures": [],
+    "claim_scope": "operational conditional-entropy bridge on frozen MNIST codecs",
+    "scope_exclusions": [
+      "not a proof of the information-theoretic theorem",
+      "does not manipulate the finite whole-codec mode budget K",
+      "does not identify a general K-Rc boundary",
+      "does not equate a stored PRNG seed with iid schedule entropy H(U)"
+    ],
+    "maximum_levels": 31,
+    "checkpoint_mean_endpoint_gains_bpp": [
+      0.00010612244897959184,
+      0.005395918367346939,
+      0.009226122448979591,
+      0.009248979591836733
+    ],
+    "median_checkpoint_mean_endpoint_gain_bpp": 0.007311020408163265,
+    "minimum_actual_gain_bpp": 0.001,
+    "nonnegative_actual_mean_checks": 16,
+    "nonnegative_quantized_mean_checks": 16,
+    "total_mean_checks": 16
+  },
+  "summaries": [
+    {
+      "rate_weight": 0.0,
+      "levels": 1,
+      "repetitions": 5,
+      "actual_gain_bpp": {
+        "mean": 0.0,
+        "standard_deviation": 0.0,
+        "ci95_lower": 0.0,
+        "ci95_upper": 0.0
+      },
+      "quantized_cdf_gain_bpp": {
+        "mean": 0.0,
+        "standard_deviation": 0.0,
+        "ci95_lower": 0.0,
+        "ci95_upper": 0.0
+      },
+      "all_same_symbols_and_reconstruction": true,
+      "maximum_escape_tail_mass": 7.675475899304729e-06,
+      "maximum_normalization_residual": 2.384185791015625e-07
+    },
+    {
+      "rate_weight": 0.0,
+      "levels": 3,
+      "repetitions": 5,
+      "actual_gain_bpp": {
+        "mean": 5.7142857142857135e-05,
+        "standard_deviation": 9.997917317482358e-06,
+        "ci95_lower": 4.4728803152721314e-05,
+        "ci95_upper": 6.955691113299296e-05
+      },
+      "quantized_cdf_gain_bpp": {
+        "mean": 6.42355052641669e-05,
+        "standard_deviation": 2.622341324394223e-06,
+        "ci95_lower": 6.097943845066461e-05,
+        "ci95_upper": 6.74915720776692e-05
+      },
+      "all_same_symbols_and_reconstruction": true,
+      "maximum_escape_tail_mass": 7.817819096089806e-06,
+      "maximum_normalization_residual": 2.384185791015625e-07
+    },
+    {
+      "rate_weight": 0.0,
+      "levels": 7,
+      "repetitions": 5,
+      "actual_gain_bpp": {
+        "mean": 0.00013714285714285713,
+        "standard_deviation": 6.829877767625116e-06,
+        "ci95_lower": 0.0001286624438066647,
+        "ci95_upper": 0.00014562327047904956
+      },
+      "quantized_cdf_gain_bpp": {
+        "mean": 0.00014532972941697786,
+        "standard_deviation": 2.94023005943674e-06,
+        "ci95_lower": 0.00014167895160573874,
+        "ci95_upper": 0.00014898050722821697
+      },
+      "all_same_symbols_and_reconstruction": true,
+      "maximum_escape_tail_mass": 7.890807864896487e-06,
+      "maximum_normalization_residual": 2.384185791015625e-07
+    },
+    {
+      "rate_weight": 0.0,
+      "levels": 15,
+      "repetitions": 5,
+      "actual_gain_bpp": {
+        "mean": 9.959183673469388e-05,
+        "standard_deviation": 1.460289291428434e-05,
+        "ci95_lower": 8.145995033340214e-05,
+        "ci95_upper": 0.00011772372313598562
+      },
+      "quantized_cdf_gain_bpp": {
+        "mean": 0.00012354513710502498,
+        "standard_deviation": 2.2249290220911184e-06,
+        "ci95_lower": 0.00012078252283973572,
+        "ci95_upper": 0.00012630775137031423
+      },
+      "all_same_symbols_and_reconstruction": true,
+      "maximum_escape_tail_mass": 7.927767001092434e-06,
+      "maximum_normalization_residual": 2.384185791015625e-07
+    },
+    {
+      "rate_weight": 0.0,
+      "levels": 31,
+      "repetitions": 5,
+      "actual_gain_bpp": {
+        "mean": 0.00010612244897959184,
+        "standard_deviation": 8.163265306122445e-06,
+        "ci95_lower": 9.598641634119375e-05,
+        "ci95_upper": 0.00011625848161798993
+      },
+      "quantized_cdf_gain_bpp": {
+        "mean": 0.00011798988661937873,
+        "standard_deviation": 3.6791914463468566e-06,
+        "ci95_lower": 0.00011342156705795059,
+        "ci95_upper": 0.00012255820618080687
+      },
+      "all_same_symbols_and_reconstruction": true,
+      "maximum_escape_tail_mass": 7.946367077238392e-06,
+      "maximum_normalization_residual": 2.384185791015625e-07
+    },
+    {
+      "rate_weight": 200.0,
+      "levels": 1,
+      "repetitions": 5,
+      "actual_gain_bpp": {
+        "mean": 0.0,
+        "standard_deviation": 0.0,
+        "ci95_lower": 0.0,
+        "ci95_upper": 0.0
+      },
+      "quantized_cdf_gain_bpp": {
+        "mean": 0.0,
+        "standard_deviation": 0.0,
+        "ci95_lower": 0.0,
+        "ci95_upper": 0.0
+      },
+      "all_same_symbols_and_reconstruction": true,
+      "maximum_escape_tail_mass": 9.999999960041972e-13,
+      "maximum_normalization_residual": 5.960464477539063e-08
+    },
+    {
+      "rate_weight": 200.0,
+      "levels": 3,
+      "repetitions": 5,
+      "actual_gain_bpp": {
+        "mean": 0.002886530612244898,
+        "standard_deviation": 3.8114669485481573e-05,
+        "ci95_lower": 0.00283920499934134,
+        "ci95_upper": 0.002933856225148456
+      },
+      "quantized_cdf_gain_bpp": {
+        "mean": 0.002886734694648054,
+        "standard_deviation": 3.9420536022542865e-05,
+        "ci95_lower": 0.002837787634278968,
+        "ci95_upper": 0.0029356817550171403
+      },
+      "all_same_symbols_and_reconstruction": true,
+      "maximum_escape_tail_mass": 9.999999960041972e-13,
+      "maximum_normalization_residual": 1.1920928955078125e-07
+    },
+    {
+      "rate_weight": 200.0,
+      "levels": 7,
+      "repetitions": 5,
+      "actual_gain_bpp": {
+        "mean": 0.004324897959183673,
+        "standard_deviation": 3.182626724835595e-05,
+        "ci95_lower": 0.004285380428944178,
+        "ci95_upper": 0.004364415489423168
+      },
+      "quantized_cdf_gain_bpp": {
+        "mean": 0.004331809846054506,
+        "standard_deviation": 3.34183908687996e-05,
+        "ci95_lower": 0.0042903154332348155,
+        "ci95_upper": 0.004373304258874196
+      },
+      "all_same_symbols_and_reconstruction": true,
+      "maximum_escape_tail_mass": 9.999999960041972e-13,
+      "maximum_normalization_residual": 1.7881393432617188e-07
+    },
+    {
+      "rate_weight": 200.0,
+      "levels": 15,
+      "repetitions": 5,
+      "actual_gain_bpp": {
+        "mean": 0.005053061224489796,
+        "standard_deviation": 3.828910824345671e-05,
+        "ci95_lower": 0.005005519017260569,
+        "ci95_upper": 0.005100603431719023
+      },
+      "quantized_cdf_gain_bpp": {
+        "mean": 0.005051431581483398,
+        "standard_deviation": 2.5111884968507293e-05,
+        "ci95_lower": 0.005020251057990969,
+        "ci95_upper": 0.005082612104975828
+      },
+      "all_same_symbols_and_reconstruction": true,
+      "maximum_escape_tail_mass": 9.999999960041972e-13,
+      "maximum_normalization_residual": 2.384185791015625e-07
+    },
+    {
+      "rate_weight": 200.0,
+      "levels": 31,
+      "repetitions": 5,
+      "actual_gain_bpp": {
+        "mean": 0.005395918367346939,
+        "standard_deviation": 2.8861501272920284e-05,
+        "ci95_lower": 0.005360082080282241,
+        "ci95_upper": 0.0054317546544116364
+      },
+      "quantized_cdf_gain_bpp": {
+        "mean": 0.005394742134598711,
+        "standard_deviation": 2.120094876917827e-05,
+        "ci95_lower": 0.00536841767978426,
+        "ci95_upper": 0.005421066589413162
+      },
+      "all_same_symbols_and_reconstruction": true,
+      "maximum_escape_tail_mass": 9.999999960041972e-13,
+      "maximum_normalization_residual": 2.384185791015625e-07
+    },
+    {
+      "rate_weight": 5000.0,
+      "levels": 1,
+      "repetitions": 5,
+      "actual_gain_bpp": {
+        "mean": 0.0,
+        "standard_deviation": 0.0,
+        "ci95_lower": 0.0,
+        "ci95_upper": 0.0
+      },
+      "quantized_cdf_gain_bpp": {
+        "mean": 0.0,
+        "standard_deviation": 0.0,
+        "ci95_lower": 0.0,
+        "ci95_upper": 0.0
+      },
+      "all_same_symbols_and_reconstruction": true,
+      "maximum_escape_tail_mass": 9.999999960041972e-13,
+      "maximum_normalization_residual": 1.1920928955078125e-07
+    },
+    {
+      "rate_weight": 5000.0,
+      "levels": 3,
+      "repetitions": 5,
+      "actual_gain_bpp": {
+        "mean": 0.00494530612244898,
+        "standard_deviation": 1.7697537460145654e-05,
+        "ci95_lower": 0.004923331727327855,
+        "ci95_upper": 0.004967280517570105
+      },
+      "quantized_cdf_gain_bpp": {
+        "mean": 0.00494017679658545,
+        "standard_deviation": 1.3696457836651667e-05,
+        "ci95_lower": 0.0049231703979867635,
+        "ci95_upper": 0.004957183195184136
+      },
+      "all_same_symbols_and_reconstruction": true,
+      "maximum_escape_tail_mass": 9.999999960041972e-13,
+      "maximum_normalization_residual": 2.384185791015625e-07
+    },
+    {
+      "rate_weight": 5000.0,
+      "levels": 7,
+      "repetitions": 5,
+      "actual_gain_bpp": {
+        "mean": 0.007379591836734695,
+        "standard_deviation": 1.2907255755789211e-05,
+        "ci95_lower": 0.007363565361947123,
+        "ci95_upper": 0.007395618311522267
+      },
+      "quantized_cdf_gain_bpp": {
+        "mean": 0.007378567860778777,
+        "standard_deviation": 1.238585080094247e-05,
+        "ci95_lower": 0.007363188795752124,
+        "ci95_upper": 0.007393946925805431
+      },
+      "all_same_symbols_and_reconstruction": true,
+      "maximum_escape_tail_mass": 9.999999960041972e-13,
+      "maximum_normalization_residual": 2.384185791015625e-07
+    },
+    {
+      "rate_weight": 5000.0,
+      "levels": 15,
+      "repetitions": 5,
+      "actual_gain_bpp": {
+        "mean": 0.008608979591836735,
+        "standard_deviation": 1.78848182042496e-05,
+        "ci95_lower": 0.008586772656958098,
+        "ci95_upper": 0.008631186526715372
+      },
+      "quantized_cdf_gain_bpp": {
+        "mean": 0.008611241917696553,
+        "standard_deviation": 2.299941972228075e-05,
+        "ci95_lower": 0.008582684366247819,
+        "ci95_upper": 0.008639799469145287
+      },
+      "all_same_symbols_and_reconstruction": true,
+      "maximum_escape_tail_mass": 9.999999960041972e-13,
+      "maximum_normalization_residual": 2.384185791015625e-07
+    },
+    {
+      "rate_weight": 5000.0,
+      "levels": 31,
+      "repetitions": 5,
+      "actual_gain_bpp": {
+        "mean": 0.009226122448979591,
+        "standard_deviation": 6.8298777676247986e-06,
+        "ci95_lower": 0.0092176420356434,
+        "ci95_upper": 0.009234602862315783
+      },
+      "quantized_cdf_gain_bpp": {
+        "mean": 0.009237475185682213,
+        "standard_deviation": 1.0297282168297796e-05,
+        "ci95_lower": 0.009224689421134491,
+        "ci95_upper": 0.009250260950229934
+      },
+      "all_same_symbols_and_reconstruction": true,
+      "maximum_escape_tail_mass": 9.999999960041972e-13,
+      "maximum_normalization_residual": 2.384185791015625e-07
+    },
+    {
+      "rate_weight": 50000.0,
+      "levels": 1,
+      "repetitions": 5,
+      "actual_gain_bpp": {
+        "mean": 0.0,
+        "standard_deviation": 0.0,
+        "ci95_lower": 0.0,
+        "ci95_upper": 0.0
+      },
+      "quantized_cdf_gain_bpp": {
+        "mean": 0.0,
+        "standard_deviation": 0.0,
+        "ci95_lower": 0.0,
+        "ci95_upper": 0.0
+      },
+      "all_same_symbols_and_reconstruction": true,
+      "maximum_escape_tail_mass": 9.999999960041972e-13,
+      "maximum_normalization_residual": 2.384185791015625e-07
+    },
+    {
+      "rate_weight": 50000.0,
+      "levels": 3,
+      "repetitions": 5,
+      "actual_gain_bpp": {
+        "mean": 0.0040718367346938775,
+        "standard_deviation": 8.942409102125216e-06,
+        "ci95_lower": 0.004060733267254559,
+        "ci95_upper": 0.004082940202133196
+      },
+      "quantized_cdf_gain_bpp": {
+        "mean": 0.0040682161263583885,
+        "standard_deviation": 1.2007165118965735e-05,
+        "ci95_lower": 0.004053307261709681,
+        "ci95_upper": 0.004083124991007096
+      },
+      "all_same_symbols_and_reconstruction": true,
+      "maximum_escape_tail_mass": 9.999999960041972e-13,
+      "maximum_normalization_residual": 2.384185791015625e-07
+    },
+    {
+      "rate_weight": 50000.0,
+      "levels": 7,
+      "repetitions": 5,
+      "actual_gain_bpp": {
+        "mean": 0.006860408163265307,
+        "standard_deviation": 1.2380204806614945e-05,
+        "ci95_lower": 0.006845036108666544,
+        "ci95_upper": 0.006875780217864069
+      },
+      "quantized_cdf_gain_bpp": {
+        "mean": 0.0068582780724598755,
+        "standard_deviation": 9.006611549098149e-06,
+        "ci95_lower": 0.006847094887153554,
+        "ci95_upper": 0.006869461257766197
+      },
+      "all_same_symbols_and_reconstruction": true,
+      "maximum_escape_tail_mass": 9.999999960041972e-13,
+      "maximum_normalization_residual": 2.384185791015625e-07
+    },
+    {
+      "rate_weight": 50000.0,
+      "levels": 15,
+      "repetitions": 5,
+      "actual_gain_bpp": {
+        "mean": 0.008427755102040815,
+        "standard_deviation": 2.0489633302875432e-05,
+        "ci95_lower": 0.008402313862032239,
+        "ci95_upper": 0.008453196342049392
+      },
+      "quantized_cdf_gain_bpp": {
+        "mean": 0.008430805309664063,
+        "standard_deviation": 2.742824986661482e-05,
+        "ci95_lower": 0.00839674863927095,
+        "ci95_upper": 0.008464861980057177
+      },
+      "all_same_symbols_and_reconstruction": true,
+      "maximum_escape_tail_mass": 9.999999960041972e-13,
+      "maximum_normalization_residual": 2.384185791015625e-07
+    },
+    {
+      "rate_weight": 50000.0,
+      "levels": 31,
+      "repetitions": 5,
+      "actual_gain_bpp": {
+        "mean": 0.009248979591836733,
+        "standard_deviation": 2.645200285064407e-05,
+        "ci95_lower": 0.009216135092216705,
+        "ci95_upper": 0.009281824091456762
+      },
+      "quantized_cdf_gain_bpp": {
+        "mean": 0.009251456312518187,
+        "standard_deviation": 2.1248731663054935e-05,
+        "ci95_lower": 0.009225072527404678,
+        "ci95_upper": 0.009277840097631695
+      },
+      "all_same_symbols_and_reconstruction": true,
+      "maximum_escape_tail_mass": 9.999999960041972e-13,
+      "maximum_normalization_residual": 2.384185791015625e-07
+    }
+  ],
+  "inputs": [
+    "results/iclr_mnist/server_controller_conditional_rate_v81/rate_0_rep_0.json",
+    "results/iclr_mnist/server_controller_conditional_rate_v81/rate_0_rep_1.json",
+    "results/iclr_mnist/server_controller_conditional_rate_v81/rate_0_rep_2.json",
+    "results/iclr_mnist/server_controller_conditional_rate_v81/rate_0_rep_3.json",
+    "results/iclr_mnist/server_controller_conditional_rate_v81/rate_0_rep_4.json",
+    "results/iclr_mnist/server_controller_conditional_rate_v81/rate_200_rep_0.json",
+    "results/iclr_mnist/server_controller_conditional_rate_v81/rate_200_rep_1.json",
+    "results/iclr_mnist/server_controller_conditional_rate_v81/rate_200_rep_2.json",
+    "results/iclr_mnist/server_controller_conditional_rate_v81/rate_200_rep_3.json",
+    "results/iclr_mnist/server_controller_conditional_rate_v81/rate_200_rep_4.json",
+    "results/iclr_mnist/server_controller_conditional_rate_v81/rate_5000_rep_0.json",
+    "results/iclr_mnist/server_controller_conditional_rate_v81/rate_5000_rep_1.json",
+    "results/iclr_mnist/server_controller_conditional_rate_v81/rate_5000_rep_2.json",
+    "results/iclr_mnist/server_controller_conditional_rate_v81/rate_5000_rep_3.json",
+    "results/iclr_mnist/server_controller_conditional_rate_v81/rate_5000_rep_4.json",
+    "results/iclr_mnist/server_controller_conditional_rate_v81/rate_50000_rep_0.json",
+    "results/iclr_mnist/server_controller_conditional_rate_v81/rate_50000_rep_1.json",
+    "results/iclr_mnist/server_controller_conditional_rate_v81/rate_50000_rep_2.json",
+    "results/iclr_mnist/server_controller_conditional_rate_v81/rate_50000_rep_3.json",
+    "results/iclr_mnist/server_controller_conditional_rate_v81/rate_50000_rep_4.json"
+  ]
+}

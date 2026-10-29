@@ -1,0 +1,5 @@
+# Preserve release checksums and original evidence bytes across platforms.
+* -text
+*.pt binary
+*.pdf binary
+*.png binary
