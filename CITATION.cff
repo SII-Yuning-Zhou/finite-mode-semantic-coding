@@ -1,15 +1,16 @@
 cff-version: 1.2.0
 message: >-
-  If you use this software or its numerical data, please cite this specific
-  reproducibility package version using the fixed GitHub release URL.
+  If you use this software or its numerical data, please cite the archived
+  version using the software DOI below.
 type: software
 title: >-
   Finite-Mode Semantic Coding for Edge IoT under Target Distribution and
   Shared-Randomness Constraints - Code and Reproducibility Data
 version: 1.0.0
 date-released: 2026-10-30
+doi: 10.5281/zenodo.23774113
 repository-code: https://github.com/SII-Yuning-Zhou/finite-mode-semantic-coding
-url: https://github.com/SII-Yuning-Zhou/finite-mode-semantic-coding/releases/tag/v1.0.0
+url: https://zenodo.org/records/23774113
 license: MIT
 authors:
   - family-names: Zhou
@@ -40,11 +41,48 @@ abstract: >-
   Original finite-mode optimization and verification software, author-generated
   numerical records, original frozen checkpoints, endpoint profiles, and
   figure/table reproduction utilities accompanying the
-  manuscript. Original software is MIT licensed; author-generated data and
-  trained weights and graphics use CC BY 4.0. No Zenodo DOI has been assigned.
+  manuscript. Original software is MIT licensed; author-generated data,
+  trained weights and graphics use CC BY 4.0.
 keywords:
   - semantic communication
   - source coding
   - common randomness
   - edge IoT
   - reproducibility
+preferred-citation:
+  type: software
+  title: >-
+    Finite-Mode Semantic Coding for Edge IoT under Target Distribution and
+    Shared-Randomness Constraints - Code and Reproducibility Data
+  version: 1.0.0
+  date-released: 2026-10-30
+  year: 2026
+  doi: 10.5281/zenodo.23774113
+  url: https://zenodo.org/records/23774113
+  publisher:
+    name: Zenodo
+  authors:
+    - family-names: Zhou
+      given-names: Yuning
+      affiliation: Fudan University; Shanghai Innovation Institute
+    - family-names: Wang
+      given-names: Yunkai
+      affiliation: Fudan University
+    - family-names: Lu
+      given-names: Zhilan
+      affiliation: Fudan University
+    - family-names: Li
+      given-names: Ziwei
+      affiliation: Fudan University
+    - family-names: Bao
+      given-names: Feng
+      affiliation: Fudan University
+    - family-names: Shen
+      given-names: Chao
+      affiliation: Fudan University
+    - family-names: Zhang
+      given-names: Junwen
+      affiliation: Fudan University
+    - family-names: Chi
+      given-names: Nan
+      affiliation: Fudan University

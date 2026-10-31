@@ -3,6 +3,8 @@ __pycache__/
 .pytest_cache/
 .venv/
 outputs/
+runs/
+results/**/generated_configs/
 checkpoints/
 neural/checkpoints/
 data_external/

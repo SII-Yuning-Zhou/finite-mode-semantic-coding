@@ -2,7 +2,7 @@
   "title": "Finite-Mode Semantic Coding for Edge IoT under Target Distribution and Shared-Randomness Constraints - Code and Reproducibility Data",
   "upload_type": "software",
   "version": "1.0.0",
-  "description": "Version 1.0.0 of the original software, numerical records, five original frozen checkpoints and eight endpoint profiles accompanying the manuscript. Repository: https://github.com/SII-Yuning-Zhou/finite-mode-semantic-coding . Fixed release: https://github.com/SII-Yuning-Zhou/finite-mode-semantic-coding/releases/tag/v1.0.0 . Original code: MIT. Author-generated data, trained weights and graphics: CC BY 4.0. See LICENSE-DATA.md and THIRD_PARTY_NOTICES.md for scope. No Zenodo DOI has been assigned; these metadata support a future archival deposit.",
+  "description": "Version 1.0.0 of the original software, numerical records, five original frozen checkpoints and eight endpoint profiles accompanying the manuscript. Archived software and reproducibility materials: https://doi.org/10.5281/zenodo.23774113 . Repository: https://github.com/SII-Yuning-Zhou/finite-mode-semantic-coding . Original code and usage documentation: MIT. Author-generated data, trained weights and graphics: CC BY 4.0. These licenses apply to their respective components. Third-party materials retain their original terms; see LICENSE-DATA.md and THIRD_PARTY_NOTICES.md.",
   "creators": [
     {"name": "Zhou, Yuning", "affiliation": "Fudan University; Shanghai Innovation Institute"},
     {"name": "Wang, Yunkai", "affiliation": "Fudan University"},
@@ -15,5 +15,9 @@
   ],
   "license": "mit",
   "access_right": "open",
+  "related_identifiers": [
+    {"identifier": "10.5281/zenodo.23774113", "relation": "isIdenticalTo", "scheme": "doi"},
+    {"identifier": "https://github.com/SII-Yuning-Zhou/finite-mode-semantic-coding/releases/tag/v1.0.0", "relation": "isIdenticalTo", "scheme": "url"}
+  ],
   "keywords": ["semantic communication", "finite-mode coding", "common randomness", "edge IoT", "reproducibility"]
 }

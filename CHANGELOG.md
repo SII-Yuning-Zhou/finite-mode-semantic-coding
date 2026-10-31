@@ -1,5 +1,14 @@
 # Changes
 
+## Documentation and public interface - 2026-10-31
+
+- Redesigned the project homepage with a system overview, quick start, models,
+  experiment entry points, and citation information.
+- Added a Chinese README and a conference-neutral MNIST command-line interface.
+- Added the registered version DOI: https://doi.org/10.5281/zenodo.23774113.
+- Kept the v1.0.0 tag, release archive, Zenodo deposit, observations and original
+  checkpoint bytes unchanged. Historical paths remain available for replay.
+
 ## 1.0.0 - public release 2026-10-30
 
 - Published the standalone reproducibility package, without the development
@@ -9,7 +18,8 @@
 - Updated release metadata and public entry points. The RC2 scientific code,
   numerical evidence, original checkpoint bytes and validation records are retained.
 - Original code remains MIT licensed; author-generated data, trained weights
-  and graphics remain CC BY 4.0. No Zenodo DOI has been assigned.
+  and graphics remain CC BY 4.0. Zenodo archival was completed subsequently on
+  2026-10-31 under DOI 10.5281/zenodo.23774113.
 
 ## Candidate preparation history
 

@@ -1,46 +1,69 @@
 # Environments
 
-## Fast CPU reproduction
+## Lightweight reproduction
 
-The lightweight validation uses Windows and Python 3.11.4 with NumPy 2.4.4,
-Matplotlib 3.10.9, mpmath 1.3.0, Pillow 12.2.0, SymPy 1.14.0 and pytest 9.0.3.
-The quick path is designed to avoid PyTorch/CUDA/CompressAI and use package-relative
-paths. A clean-directory execution report is supplied in `validation/` after testing.
+```bash
+python -m pip install -r requirements.txt
+python run_reproduction.py
+```
 
-Install the lightweight requirements in a virtual environment. Original paper
-neural training and archived records use a different environment; do not conflate
-the two when comparing exact neural outputs or runtime measurements.
+This path verifies theory and saved measurements, rebuilds tables and plots,
+and uses package-relative inputs. It needs Python 3.11 or newer, NumPy,
+Matplotlib, mpmath and Pillow.
 
-## Paper neural environment
+The recorded Windows validation environment was Python 3.11.4, NumPy 2.4.4,
+Matplotlib 3.10.9, mpmath 1.3.0 and Pillow 12.2.0. Optional symbolic/test tools
+were SymPy 1.14.0 and pytest 9.0.3. Exact execution records are in
+[validation/](../validation/).
 
-The reported experiment environment is FP32, PyTorch 2.7.0a0, torchvision
-0.22.0a0, CompressAI 1.2.8, CUDA 12.8 and NVIDIA GeForce RTX 4090. Profiling uses
-batch one, one CPU intra-op/inter-op thread, 20 warm-up calls and 100 timed calls.
-Runtime values are measurements on the recorded platform, not a timing guarantee
-for a reader's machine.
+## Neural evaluation and profiling
 
-See `NEURAL_REPRODUCTION.md` for installation, exact configurations, checkpoint
-inputs and optional full evaluation/training. The current Windows packaging
-environment has no PyTorch, torchvision or CompressAI; it does not provide a
-new neural training, rANS roundtrip or GPU profiling validation.
+Install compatible PyTorch and torchvision builds for your machine before
+installing `neural/requirements.txt`.
 
-## Additional RC2 checkpoint validation
+| Component | Recorded experiment environment |
+|---|---|
+| Runtime image | NVIDIA PyTorch 25.02 |
+| PyTorch | 2.7.0a0+ecf3bae40a.nv25.02 |
+| torchvision | 0.22.0a0 |
+| CompressAI | 1.2.8 |
+| CUDA | 12.8 |
+| GPU | NVIDIA GeForce RTX 4090 |
+| Precision | FP32; AMP and TF32 disabled |
 
-An existing Linux environment is used separately for CPU checkpoint loading
-and smoke checks: Python 3.12.15, PyTorch 2.6.0+cu126, torchvision 0.21.0+cu126,
-CompressAI 1.2.8 and NumPy 1.26.4. No packages are installed into or removed from
-that environment by the release builder. CPU execution does not require a GPU.
-This runtime differs from the historical NVIDIA 25.02 training image.
+Set `CUBLAS_WORKSPACE_CONFIG=:4096:8` before importing PyTorch when
+deterministic CUDA execution is required. CompressAI must provide its ANS
+extension.
 
-The actual checks, outcomes and any skips are recorded in
-`validation/checkpoint_validation.json`. A small-input checkpoint smoke test
-is separate from replaying the 5,000-image MNIST evaluation and from measuring
-new CPU/CUDA timing distributions. The lightweight entry point never installs
-this optional runtime, downloads images or starts training.
+Endpoint profiling uses batch one, one CPU intra-op/inter-op thread, 20 warm-up
+calls and 100 timed calls. Recorded timings describe the saved platform;
+running the profiler produces measurements for the reader's own platform.
 
-## Fonts
+## CPU model and entropy-coder checks
 
-The original publication PDFs retain their embedded fonts. Portable scientific
-replots use the fonts available to Matplotlib, with open mathematical font
-fallbacks; numerical data and CI meanings are retained independently of fonts.
-Do not infer that a portable replot must be pixel-identical to a publication PDF.
+A compatible Linux environment was used for the published checkpoint smoke
+and regression checks:
+
+| Component | Recorded verification environment |
+|---|---|
+| Python | 3.12.15 |
+| PyTorch | 2.6.0+cu126 |
+| torchvision | 0.21.0+cu126 |
+| CompressAI | 1.2.8 |
+| NumPy | 1.26.4 |
+| Execution | CPU, one thread |
+
+The five checkpoints passed safe loading, finite-value checks and model
+compatibility checks. Small-input neural/coding checks and all four ANS
+regression tests passed. The detailed scopes are in
+[checkpoint_validation.json](../validation/checkpoint_validation.json) and
+[ans_regression_validation.json](../validation/ans_regression_validation.json).
+The lightweight Windows run records its optional-dependency skips separately.
+
+## Plotting fonts
+
+Publication PDFs retain their embedded fonts. Portable numeric replots use
+Matplotlib's available DejaVu/STIX mathematical fonts; both the exact
+publication assets and the underlying numeric data are supplied.
+
+See [MNIST codec](NEURAL_REPRODUCTION.md) for evaluation and profiling commands.

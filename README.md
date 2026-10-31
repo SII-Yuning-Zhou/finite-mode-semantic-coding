@@ -1,124 +1,164 @@
+<div align="center">
+
 # Finite-Mode Semantic Coding for Edge IoT
 
-Code and reproducibility data for **Finite-Mode Semantic Coding for Edge IoT
-under Target Distribution and Shared-Randomness Constraints**.
+**Target Distribution · Finite Mapping Libraries · Shared Randomness**
 
-Yuning Zhou, Yunkai Wang, Zhilan Lu, Ziwei Li, Feng Bao, Chao Shen,
-Junwen Zhang, and Nan Chi.
+Yuning Zhou<sup>1,2</sup>, Yunkai Wang<sup>1</sup>, Zhilan Lu<sup>1</sup>, Ziwei Li<sup>1</sup>,<br>
+Feng Bao<sup>1</sup>, Chao Shen<sup>1</sup>, Junwen Zhang<sup>1</sup>, and Nan Chi<sup>1</sup>
 
-This package connects the finite-mode theory to executable numerical checks,
-archived paired conditional-rANS measurements, and figure/table reproduction.
-This is **version `1.0.0`**, corresponding to the author manuscript snapshot V53.
-The manuscript PDF/TeX and its development history are not included in this
-software/data package.
+<sup>1</sup> Fudan University &nbsp; <sup>2</sup> Shanghai Innovation Institute
 
-- Repository: [SII-Yuning-Zhou/finite-mode-semantic-coding](https://github.com/SII-Yuning-Zhou/finite-mode-semantic-coding)
-- Fixed release: [v1.0.0](https://github.com/SII-Yuning-Zhou/finite-mode-semantic-coding/releases/tag/v1.0.0)
+[![Code and data DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23774113.svg)](https://doi.org/10.5281/zenodo.23774113)
+[![Python](https://img.shields.io/badge/Python-3.11%2B-3776AB?logo=python&logoColor=white)](requirements.txt)
+[![Code license](https://img.shields.io/badge/Code-MIT-blue.svg)](LICENSE)
+[![Data license](https://img.shields.io/badge/Data%20%26%20weights-CC%20BY%204.0-green.svg)](LICENSE-DATA.md)
 
-No Zenodo DOI has been assigned. The GitHub release identifies this version.
+[Overview](#overview) · [Quick start](#quick-start) · [Models](#pretrained-models) · [MNIST](#mnist-experiments) · [Citation](#citation) · [中文](README_zh-CN.md)
 
-## Quick start: lightweight CPU path
+</div>
 
-Use Python 3.11 or newer. From an unpacked package root:
+Official code and reproducibility resources for **Finite-Mode Semantic Coding
+for Edge IoT under Target Distribution and Shared-Randomness Constraints**.
+
+## Overview
+
+How do a finite library of deterministic mappings and a shared-randomness budget
+shape semantic coding? This project studies their joint effect on target
+distributions, task constraints, and communication cost, with exact finite-mode
+optimization and an executable neural-coding example.
+
+<p align="center">
+  <img src="figures/publication/fig1.png" width="950" alt="Finite-mode semantic coding system with a shared schedule, conditional entropy coding, and two task-receiver interfaces">
+</p>
+
+- **Theory:** Bernoulli optimizers, finite-alphabet examples, strict mode-gain
+  certificates, and shared-randomness sampling.
+- **Coding:** paired marginal and conditional rANS using the same quantized
+  symbols and reconstructions.
+- **Resources:** trained MNIST models, CDF storage, endpoint state, and recorded
+  batch-one encoding and decoding latency.
+- **Reproduction:** source data and runnable tools for the paper's numerical
+  figures and tables.
+
+## Quick start
+
+Clone the repository and install the core dependencies with Python 3.11 or newer:
 
 ```bash
+git clone https://github.com/SII-Yuning-Zhou/finite-mode-semantic-coding.git
+cd finite-mode-semantic-coding
 python -m venv .venv
-# Activate .venv using your operating system's normal command.
+# Activate .venv for your operating system, then:
 python -m pip install -r requirements.txt
 python run_reproduction.py
 ```
 
-The unified command runs the theoretical witness checks, verifies the archived
-MNIST records and regenerates portable scientific plots. It does not download
-MNIST, train a neural network, or start a GPU benchmark. New outputs go to
-`outputs/`; the supplied evidence under `data/` is read-only input.
+This command checks the theoretical examples and released measurements,
+rebuilds the tables, and generates the numerical figures in `outputs/`.
+It runs on CPU with the core dependencies. Neural evaluation and new training
+are separate commands below.
 
-Individual verification commands:
+Useful individual commands:
 
 ```bash
 python -m theory.verify
-python neural/quick_verify.py
-python -m reproduce.check_data --output outputs/figure_source_checks.json
-python -m unittest discover -s tests/theory -v
+python -m reproduce.figures --output outputs/figures
+python -m reproduce.tables --output outputs/tables
+python run_reproduction.py --tests --skip-plots
 ```
 
-See `validation/validation_report.json` for what was actually executed during
-packaging, including explicit skips and the tested environment.
+## Pretrained models
 
-## Contents
-
-| Location | Purpose |
-|---|---|
-| `theory/` | Bernoulli optimizers, finite-candidate and strict-gain certificates, finite-alphabet witness, sampler/simulation programs |
-| `data/theory/` | Complete archived point-level synthetic-source tables and certificate records |
-| `neural/` | Conditional-rANS, codec training/evaluation and endpoint profiling code; lightweight archived-record checker |
-| `configs/` | Frozen protocol and training configurations, including reproduction seeds |
-| `data/neural/` | All paired schedule-level observations, reports, artifact provenance and the retained Table V transcription |
-| `results/iclr_mnist/` | Four original codec checkpoints, the frozen classifier, eight original endpoint profiles and supporting metadata |
-| `data/figures/`, `reproduce/` | Frozen figure scene/source arrays and standalone portable plotting utilities |
-| `figures/` | Archived publication figure assets and portable rendering support |
-| `docs/` | Code-to-paper mappings, environments, provenance, data meanings and publication checklist |
-| `tests/` | Fast theoretical regression checks |
-
-The per-component inventories identify original source files and the adaptations
-made for package-relative paths. Original observations and controls are not
-filtered by sign, gain or quality.
-
-## What the data represent
-
-- The Bernoulli 90-point archive contains means and confidence intervals from
-  the recorded simulation protocol. It is not a saved stream of every source
-  symbol or every Monte Carlo replication. The generator and seeds are supplied.
-- The MNIST archive contains 100 **schedule-level paired measurements**, including
-  20 `L=1` controls and 80 nontrivial comparisons. It is not a redistribution of
-  MNIST images or a dump of all training/bitstream events.
-- Frozen figure scenes retain the numerical arrays, masks, sampled curves and
-  CI geometry needed to replot the displayed results. The independent reader
-  is a portable scientific replot; it is not a claim of pixel identity with
-  the archived publication artwork.
-- Table V is independently rebuilt from **eight original endpoint profile
-  reports, 16,000 recorded timed calls and their 80-row ledger**. Its four summary rows are checked against
-  the separately retained manuscript transcription. Aggregating these recorded
-  measurements does not perform new latency measurements.
-
-## Frozen checkpoints and neural replay
-
-The four original codec checkpoints, frozen classifier checkpoint, eight
-endpoint profile reports and their configurations are bundled at the original
-repository-relative paths. The checkpoint bytes are preserved; public JSON
-copies change only private absolute paths and internal identifiers, with transformations recorded in
-`data/neural/frozen_artifacts_manifest.json`. Source fingerprints are retained.
+The repository includes four MNIST codec checkpoints and a trained grayscale
+classifier. The codec objective weights are **0, 200, 5,000, and 50,000**.
 
 ```bash
-python neural/verify_frozen_artifacts.py
+python mnist.py list-models
 ```
 
-Like-for-like neural replay additionally requires MNIST and an appropriate
-PyTorch/torchvision/CompressAI environment. Exact commands and the distinction
-between archived evidence, CPU checkpoint smoke tests and full dataset replay
-are in `docs/NEURAL_REPRODUCTION.md` and `validation/`.
+The complete **v1.0.0** model-and-data archive is available from
+[GitHub Releases](https://github.com/SII-Yuning-Zhou/finite-mode-semantic-coding/releases/tag/v1.0.0)
+and [Zenodo](https://doi.org/10.5281/zenodo.23774113).
+The archived release is fixed; clone the repository for the current convenience
+commands shown here.
 
-The default path checks the bundled artifacts and rebuilds the recorded tables
-without importing PyTorch. Dataset evaluation, training and new profiling are
-opt-in; a fresh training run is a new experiment rather than the frozen run.
+## MNIST experiments
 
-## Documentation
+Install a compatible PyTorch/torchvision build for your machine, followed by:
 
-- [Theory](docs/THEORY_REPRODUCTION.md)
-- [MNIST and endpoint profiling](docs/NEURAL_REPRODUCTION.md)
-- [Figures and tables](docs/FIGURE_REPRODUCTION.md)
-- [Environments](docs/ENVIRONMENT.md)
-- [Publication steps](docs/PUBLISHING_CHECKLIST_ZH.md)
-- [Obtaining a version DOI (Chinese)](docs/DOI_ZH.md)
-- Chinese entry point: [START_HERE_ZH.md](START_HERE_ZH.md)
+```bash
+python -m pip install -r neural/requirements.txt
+python mnist.py --help
+```
 
-## License and citation
+Use the project-level interface for model evaluation, endpoint profiling, and
+training. Command options and complete reproduction recipes are in the
+[MNIST guide](docs/NEURAL_REPRODUCTION.md).
 
-Original code and usage documentation: **MIT**, see `LICENSE`.
-Author-generated numerical data, trained weights and graphics: **CC BY 4.0**,
-see `LICENSE-DATA.md`.
-Third-party resources retain their own terms, see `THIRD_PARTY_NOTICES.md`.
+```bash
+# Evaluate a released codec.
+python mnist.py evaluate --rate-weight 5000 --device cuda:0
 
-Use `CITATION.cff` for author and version metadata, and cite the fixed `v1.0.0`
-release above. A SHA-256 file manifest and release-archive checksum accompany
-the package. A DOI can be added after a separate Zenodo archival deposit.
+# Measure batch-one encoding and decoding on CPU.
+python mnist.py profile --rate-weight 5000 --device cpu
+```
+
+<p align="center">
+  <img src="figures/publication/fig6.png" width="950" alt="MNIST storage-payload, reconstruction-error, and classification-error results">
+</p>
+
+The supplied results pair marginal and conditional entropy coding at fixed
+model weights and offset schedules. The archive contains all schedule
+repetitions, original timing samples, and the data underlying these plots.
+
+## Repository structure
+
+```text
+theory/               Finite-mode models, optimizers, and certificates
+neural/               MNIST codec and conditional entropy coding
+configs/              Experiment configurations
+data/                 Numerical results and figure source data
+results/              Trained checkpoints and endpoint measurements
+reproduce/            Figure and table generation
+figures/publication/  Paper figures
+tests/                Regression tests
+docs/                 Experiment and reproduction guides
+validation/           Recorded validation results
+mnist.py              MNIST experiment interface
+run_reproduction.py   End-to-end numerical reproduction
+```
+
+**Documentation:** [Theory](docs/THEORY_REPRODUCTION.md) ·
+[MNIST](docs/NEURAL_REPRODUCTION.md) ·
+[Figures and tables](docs/FIGURE_REPRODUCTION.md) ·
+[Environment](docs/ENVIRONMENT.md) ·
+[Validation](validation/validation_report.json)
+
+## Citation
+
+Please cite the versioned code and reproducibility release:
+
+```bibtex
+@software{zhou2026finite_mode,
+  author    = {Zhou, Yuning and Wang, Yunkai and Lu, Zhilan and Li, Ziwei and
+               Bao, Feng and Shen, Chao and Zhang, Junwen and Chi, Nan},
+  title     = {Finite-Mode Semantic Coding for Edge IoT under Target Distribution
+               and Shared-Randomness Constraints - Code and Reproducibility Data},
+  year      = {2026},
+  version   = {1.0.0},
+  publisher = {Zenodo},
+  doi       = {10.5281/zenodo.23774113},
+  url       = {https://doi.org/10.5281/zenodo.23774113}
+}
+```
+
+## License and acknowledgements
+
+Original code and usage documentation use the [MIT license](LICENSE).
+Author-generated data, trained weights, and figures use
+[CC BY 4.0](LICENSE-DATA.md).
+
+The neural implementation uses PyTorch, torchvision, and CompressAI. Dependencies
+and external datasets retain their original licenses; see
+[third-party notices](THIRD_PARTY_NOTICES.md).

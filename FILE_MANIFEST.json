@@ -1,5 +1,8 @@
 {
   "version": "1.0.0",
+  "snapshot": "main: documentation and public MNIST interface update",
+  "archive_doi": "10.5281/zenodo.23774113",
+  "immutable_release_tag": "v1.0.0",
   "files": [
     {
       "path": ".gitattributes",
@@ -8,23 +11,63 @@
     },
     {
       "path": ".gitignore",
-      "bytes": 141,
-      "sha256": "a820d67ce1deb38cf061046c958fc671b1ef83dd50ad72771d271856f80cb341"
+      "bytes": 177,
+      "sha256": "e4d67a7c3756b0df2f7c3201349d686ae7caeafb6b68fd6c1353c714e71212e4"
     },
     {
       "path": ".zenodo.json",
-      "bytes": 1492,
-      "sha256": "3dbb505b0dfde2c2abcfd7b2f8f463fd36a51ac807cba019363195decd37ed5e"
+      "bytes": 1794,
+      "sha256": "313e77aab947b484816cc94f29436f8177668a3f7d322cc08f8e388873786055"
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 2302,
-      "sha256": "bd873ee078e977be351ef0110ea97e41872c2ed15b7bdf66750f986a4b1d0603"
+      "bytes": 2863,
+      "sha256": "b42ab3d5fbfe418ad1b35dbd05bf21c91051da0e7248f364d64c4b15616e7650"
     },
     {
       "path": "CITATION.cff",
-      "bytes": 1721,
-      "sha256": "df4ba197b77581e0d3b563e669592095aaeb5f787ead102bbc5e1768c2c4a7c2"
+      "bytes": 2713,
+      "sha256": "19b1fe41fcc908d7db1851e0a68322cfe79712a9b0d6bf59c0ce9015b9076d42"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1121,
+      "sha256": "4677eef5106e71de541ce0ec8d7a67e8ce4fbf73eaf956e927956aa2317b33c7"
+    },
+    {
+      "path": "LICENSE-DATA.md",
+      "bytes": 1499,
+      "sha256": "ce60cbaf15c9ec90b111646a7ab2fefcd6debdcb25a7e23bc5710fb30e7a0c4d"
+    },
+    {
+      "path": "README.md",
+      "bytes": 6391,
+      "sha256": "ba237e1c03fad2500ecb66e72ee378d0b4666594da5dcfaa8db9081239da43c0"
+    },
+    {
+      "path": "README_zh-CN.md",
+      "bytes": 3375,
+      "sha256": "87c4dc558439861da5ae589d9fe7e73f5c322083c8e852cf2a2ec773badf467e"
+    },
+    {
+      "path": "SOURCE_PROVENANCE.json",
+      "bytes": 2225,
+      "sha256": "c34d7767cc6026ca1ee649eabfe9018feb59a25ee0f0b46c696a04dc038762ff"
+    },
+    {
+      "path": "START_HERE_ZH.md",
+      "bytes": 355,
+      "sha256": "ae5eb0b70d2fd7581690ab5d3c702e2e0f79b7aeb300a04fb6f6eedf2d76e68f"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "bytes": 1713,
+      "sha256": "a102f1196d55250b0b782ecd4bf64cceb7eed4ac89a1ebe2c9a20e7161115fec"
+    },
+    {
+      "path": "VERSION",
+      "bytes": 6,
+      "sha256": "59854984853104df5c353e2f681a15fc7924742f9a2e468c29af248dce45ce03"
     },
     {
       "path": "configs/iclr_mnist/classifier_reference_v1.json",
@@ -87,6 +130,11 @@
       "sha256": "cf7a4ade1f769e23aef910dfe12c99d1bea2e597b91b00f9826f62532508bf95"
     },
     {
+      "path": "data/neural/README.md",
+      "bytes": 4008,
+      "sha256": "052068044802916dfe2d2f624ca07fc2cd0bf103682ada7f53ec333f38d41f41"
+    },
+    {
       "path": "data/neural/conditional_rate_v81_audit.json",
       "bytes": 1171,
       "sha256": "3f7408c646c3428bc6700bbfb193ec9db24adb245b46936ad0b749b663521fe7"
@@ -125,11 +173,6 @@
       "path": "data/neural/original_server_unit_tests.json",
       "bytes": 252,
       "sha256": "55c34c498c4892551254ad342756ea8402425e6c6b811ceca14fb3a4807b04d8"
-    },
-    {
-      "path": "data/neural/README.md",
-      "bytes": 4008,
-      "sha256": "052068044802916dfe2d2f624ca07fc2cd0bf103682ada7f53ec333f38d41f41"
     },
     {
       "path": "data/neural/sanitization.json",
@@ -392,19 +435,44 @@
       "sha256": "f0c25c9b2bff040b1513b18b96283d2a459bb0c6c4f3aa4dd4187e52c37d6552"
     },
     {
+      "path": "docs/ARCHIVE_COMPATIBILITY.md",
+      "bytes": 4352,
+      "sha256": "e0dc071dfd3a9e8df65fee415fb03a64eb9dd4b14c1886924eac73e7c09a4110"
+    },
+    {
       "path": "docs/DOI_ZH.md",
-      "bytes": 3468,
-      "sha256": "7f4790b9d32d732923b0f05e29e36951e7084bc10e43de454816e1e4fb6e7531"
+      "bytes": 1645,
+      "sha256": "5794026b3a8d40036b1122e2671c151afa13b021168d331c8c4dfc96007a0db6"
     },
     {
       "path": "docs/EDGE_RECORDS.md",
-      "bytes": 3442,
-      "sha256": "a809dee2706820f15939468d4d0a4f19ffda58ddb3bde9a78e60b164247cb08d"
+      "bytes": 3342,
+      "sha256": "1778c28975abe9aee4bef0316baeb47e9c922878c4edf95ae183dfcda5b3aad2"
     },
     {
       "path": "docs/ENVIRONMENT.md",
-      "bytes": 2380,
-      "sha256": "3854265102df4a2ee0fd893dd563bcb80c8b74f03cce9216707f1cf8defe2fb8"
+      "bytes": 2471,
+      "sha256": "ced3cc2182ef8ffdc60a8f866e3f34731fa4b1858e67d7cef83fc4a79f12a1b7"
+    },
+    {
+      "path": "docs/FIGURE_REPRODUCTION.md",
+      "bytes": 4117,
+      "sha256": "a03c802ebb9d1c8d0aa2520fc0615915ec371cf0c98243e0929ffa17caebb210"
+    },
+    {
+      "path": "docs/NEURAL_REPRODUCTION.md",
+      "bytes": 6224,
+      "sha256": "9edd5d6e38ab696602b8181551a9de90590ac2a33d004a237b94831ba2344775"
+    },
+    {
+      "path": "docs/PUBLISHING_CHECKLIST_ZH.md",
+      "bytes": 1616,
+      "sha256": "af9314b55b25075488c24adbd5054a9c9208ceb04d9878a561f95921bd1acd90"
+    },
+    {
+      "path": "docs/THEORY_REPRODUCTION.md",
+      "bytes": 6409,
+      "sha256": "f8dfc0322af86723b773318df13b37572b410c78cf6bd40b4844e0ead10ad6cc"
     },
     {
       "path": "docs/figure_inventory.json",
@@ -412,34 +480,14 @@
       "sha256": "f09bde9e34b728411836283cdf268547947a8ebe7f97ace9ec9c19b0783592fc"
     },
     {
-      "path": "docs/FIGURE_REPRODUCTION.md",
-      "bytes": 5936,
-      "sha256": "1afff8db9acf7157e066cbe5505a216a6257ac87a24b5a719d97d8abbd995472"
-    },
-    {
       "path": "docs/neural_inventory.json",
       "bytes": 4875,
       "sha256": "1030fef9cd98f56d5a8e509706e23adb6870df03acb6dcd5f34b0399e9a98663"
     },
     {
-      "path": "docs/NEURAL_REPRODUCTION.md",
-      "bytes": 10819,
-      "sha256": "6e63dc28ee4f5130e137348b79370a9797739b94621e18fccc157f6fac6578cf"
-    },
-    {
-      "path": "docs/PUBLISHING_CHECKLIST_ZH.md",
-      "bytes": 3033,
-      "sha256": "7690a2558fa9408c61638a5ec6c5b991293b2599571963e01f66c7de188ba53d"
-    },
-    {
       "path": "docs/theory_inventory.json",
       "bytes": 6039,
       "sha256": "9542339cb21b833e091fc6c7e65378e2aa2cb3bb1eb2f10a44a4c54aa96eab73"
-    },
-    {
-      "path": "docs/THEORY_REPRODUCTION.md",
-      "bytes": 6409,
-      "sha256": "f8dfc0322af86723b773318df13b37572b410c78cf6bd40b4844e0ead10ad6cc"
     },
     {
       "path": "figures/publication/fig1.pdf",
@@ -502,14 +550,9 @@
       "sha256": "ba8f889fdf0369716f6606c119703ef0ec081751fea8c94df20ca93ad3c8c088"
     },
     {
-      "path": "LICENSE",
-      "bytes": 1121,
-      "sha256": "4677eef5106e71de541ce0ec8d7a67e8ce4fbf73eaf956e927956aa2317b33c7"
-    },
-    {
-      "path": "LICENSE-DATA.md",
-      "bytes": 1499,
-      "sha256": "ce60cbaf15c9ec90b111646a7ab2fefcd6debdcb25a7e23bc5710fb30e7a0c4d"
+      "path": "mnist.py",
+      "bytes": 14220,
+      "sha256": "bc91eef346c842539f1c3f13399b29ebc908c057b62596885a466e73794ee28e"
     },
     {
       "path": "neural/__init__.py",
@@ -692,11 +735,6 @@
       "sha256": "9f12a473b2a9a53b2f973b5d00f4c48ba5178f2f3456618e975173082ba74b72"
     },
     {
-      "path": "README.md",
-      "bytes": 6152,
-      "sha256": "b012c1431f4397bb154183874b90330c792c3d696af3d1ccd5347ea5ee4b6087"
-    },
-    {
       "path": "reproduce/__init__.py",
       "bytes": 77,
       "sha256": "46c1c9540650777d4cfb6934040457c74cff559a2d39e2d99c5ddc206664793d"
@@ -862,16 +900,6 @@
       "sha256": "2fbde69dd73b8475c3985f73c849d4d1a7e9af15c934788ecc8e3547fb533423"
     },
     {
-      "path": "SOURCE_PROVENANCE.json",
-      "bytes": 1819,
-      "sha256": "9f7de8a2c659b098f026567604b21433cb9a86460b2a039f34a90d59ee771703"
-    },
-    {
-      "path": "START_HERE_ZH.md",
-      "bytes": 2547,
-      "sha256": "9c1e965ff15fdceba635826eac9e7e08153137cfe885aee2c0cddfe257d7057a"
-    },
-    {
       "path": "tests/__init__.py",
       "bytes": 83,
       "sha256": "8a9bcf8e30eb742cb00e90642f2b699436071a1cfd98c22035a2dc3ce54d6a98"
@@ -880,6 +908,16 @@
       "path": "tests/release/test_import_frozen_artifacts.py",
       "bytes": 3578,
       "sha256": "1a7ddcbcc8a0f6e1e132c37e260a510c9edf5981645d16d207f39c23158b7429"
+    },
+    {
+      "path": "tests/release/test_public_documentation.py",
+      "bytes": 1758,
+      "sha256": "bffe4b747638f5f9a43dd196f58d36c8c859ea5311578734f15659dfe2830bc1"
+    },
+    {
+      "path": "tests/release/test_public_mnist_cli.py",
+      "bytes": 10864,
+      "sha256": "e51abc8eebad7a8a18fa79575bd2e2fa3b564133136fa4bc4d0c3d9b98042785"
     },
     {
       "path": "tests/reproduce/test_tables.py",
@@ -977,11 +1015,6 @@
       "sha256": "455b8b497720d2a070e032f8377af99b9bd1184beea17012d086469c59be86e5"
     },
     {
-      "path": "THIRD_PARTY_NOTICES.md",
-      "bytes": 1713,
-      "sha256": "a102f1196d55250b0b782ecd4bf64cceb7eed4ac89a1ebe2c9a20e7161115fec"
-    },
-    {
       "path": "validation/ans_regression_validation.json",
       "bytes": 1464,
       "sha256": "158aefa6b57641997a3b4fb29b613166d3600f947f1fee064bb7595f18cb1d72"
@@ -1015,11 +1048,6 @@
       "path": "validation/validation_report.json",
       "bytes": 11510,
       "sha256": "f956497922354bb8975fba90dce612b0d77586bc17fe7619014ad3873280d68e"
-    },
-    {
-      "path": "VERSION",
-      "bytes": 6,
-      "sha256": "59854984853104df5c353e2f681a15fc7924742f9a2e468c29af248dce45ce03"
     }
   ]
 }

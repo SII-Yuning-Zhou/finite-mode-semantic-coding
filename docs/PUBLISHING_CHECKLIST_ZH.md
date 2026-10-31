@@ -1,49 +1,34 @@
-# 公开版本与投稿填写
+# 发布版本与引用
 
-## 正式版本与入口
+## 公开入口
 
-- 已获作者确认：自编代码MIT，作者生成数据CC BY 4.0；第三方材料维持原许可。
-- 版本：`1.0.0`。公开仓库：https://github.com/SII-Yuning-Zhou/finite-mode-semantic-coding 。
-- 固定版本：https://github.com/SII-Yuning-Zhou/finite-mode-semantic-coding/releases/tag/v1.0.0 。
-- 本包使用独立Git历史；原开发仓库及其可见性保持不变。
-- 目前没有Zenodo DOI；GitHub网址不是DOI，不应填入DOI栏。
-- 四个codec、冻结分类器权重及八个原始edge profile均包含在本版本；来源及路径转换
-  记录见`data/neural/frozen_artifacts_manifest.json`，实际检查结果见`validation/`。
+- 代码仓库：[finite-mode-semantic-coding](https://github.com/SII-Yuning-Zhou/finite-mode-semantic-coding)
+- 固定版本：[v1.0.0](https://github.com/SII-Yuning-Zhou/finite-mode-semantic-coding/releases/tag/v1.0.0)
+- 版本 DOI：[10.5281/zenodo.23774113](https://doi.org/10.5281/zenodo.23774113)
+- 归档记录：[Zenodo](https://zenodo.org/records/23774113)
 
-## 后续维护与归档
+该 DOI 对应 `v1.0.0` 的代码与复现材料。原代码和使用文档采用 MIT；作者生成的
+数据、训练权重和图稿采用 CC BY 4.0。第三方材料沿用原许可，详见
+`LICENSE`、`LICENSE-DATA.md` 和 `THIRD_PARTY_NOTICES.md`。
 
-1. 检查随包的来源与验证记录。科学参数、种子、硬件型号和测量值保留；JSON私人
-   路径转换有清单。原始checkpoint bytes未改；权重指纹可与正式报告核对。
-2. 在适配的PyTorch/CompressAI环境中按需运行冻结权重完整评估和新设备profiling。
-   已通过的轻量复现和CPU smoke检查见`validation/`；它们不等于重跑全部训练或测量。
-   不将SKIP改写成PASS，不将新训练当作原冻结checkpoint。
-3. 核查`LICENSE`、`LICENSE-DATA.md`和第三方说明覆盖范围。公开的是本文复现材料，
-   无需一并公开参考文献PDF、草稿或审稿记录。
-4. 后续修改在公开仓库中建立新版本；保留`v1.0.0`固定tag及其归档材料，
-   不将原开发仓的整个工作目录、历史、草稿或审稿记录混入公开仓。
-5. 检查读者在未登录作者账号时也可下载固定release中的数据和所需模型。
-6. 如采用Zenodo，归档该固定release取得真实DOI；检查DOI落地页、许可、作者、文件和版本。
-7. 把实际URL/DOI加入README、CITATION和论文的代码/数据可用性声明，再填写投稿系统。
-
-GitHub官方归档说明：
-https://docs.github.com/en/repositories/archiving-a-github-repository/referencing-and-citing-content
-
-## 投稿系统字段
-
-- “正文包含链接”：真实入口已加入稿件后再勾。
-- “已上传数据”：数据已实际发布、审稿人可以访问后再勾。只有代码不等于数据齐全。
-- DOI栏填实际DOI，不填GitHub网址，也不编造编号。
-- 数据仓库名称应与该记录的实际存放位置一致。
-
-## GitHub版本的代码/数据可用性声明
+## 代码与数据可用性声明
 
 ```text
 The code, figure source data, original trained checkpoints, paired coding-audit
 records, and endpoint profiling records supporting this study are available
 in the public reproducibility package (version 1.0.0) at
-https://github.com/SII-Yuning-Zhou/finite-mode-semantic-coding/releases/tag/v1.0.0.
-MNIST is obtained from its original public source through torchvision.
+https://doi.org/10.5281/zenodo.23774113.
+MNIST is obtained separately through torchvision from its public source.
 ```
 
-确认固定版本链接可公开访问后，可将以上声明加入稿件。若后续取得Zenodo DOI，
-再补充真实DOI和归档入口；不要在此前写成“已通过Zenodo归档”。
+引用信息见根目录 `CITATION.cff`。投稿系统中，数据仓库与 DOI 可分别填写
+`Zenodo` 和 `10.5281/zenodo.23774113`；将链接加入文稿后，再按实际情况选择
+“正文包含链接”等选项。
+
+## 后续维护
+
+GitHub `main` 提供当前使用入口与说明；固定 tag、Release ZIP 和 Zenodo 归档保留
+对应版本。后续发布新的研究代码或材料时建立新版本，并在同一 Zenodo 记录下归档；
+引用具体结果时使用实际采用的版本 DOI。
+
+论文 DOI 与软件包 DOI 分别引用，不互相替代。

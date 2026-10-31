@@ -20,5 +20,8 @@
   "license_approval": "Author confirmed MIT original code and CC BY 4.0 author-generated data on 2026-10-29",
   "public_url": "https://github.com/SII-Yuning-Zhou/finite-mode-semantic-coding",
   "release_url": "https://github.com/SII-Yuning-Zhou/finite-mode-semantic-coding/releases/tag/v1.0.0",
-  "doi": null
+  "doi": "10.5281/zenodo.23774113",
+  "archive_url": "https://zenodo.org/records/23774113",
+  "doi_scope": "Version 1.0.0 software and reproducibility materials, not a journal-article DOI",
+  "current_documentation_note": "Main-branch presentation and citation metadata were refreshed after archival publication. Historical source records, original fingerprints, the v1.0.0 tag and the Zenodo archive are preserved."
 }
